@@ -16,7 +16,8 @@ import ScrollUp from "../scrollUp";
 
 const DefaultLayoutLoader = ({ children, match }: any) => {
   const [loaderStart, setLoaderStart] = useState(false);
-
+  const [show, setShow] = useState(false);
+  const [cancel, setCancel] = useState(false);
   useEffect(() => {
     setLoaderStart(true);
     let timer = setTimeout(() => {
@@ -28,6 +29,12 @@ const DefaultLayoutLoader = ({ children, match }: any) => {
   }, []);
   return (
     <>
+      <Cookies
+        show={show}
+        setShow={setShow}
+        cancel={cancel}
+        setCancel={setCancel}
+      />
       {loaderStart ? (
         <Loader />
       ) : (
@@ -41,20 +48,19 @@ const DefaultLayoutLoader = ({ children, match }: any) => {
   );
 };
 
-const DefaultLayout = ({ children, match }: any) => (
-  <>
-    {/* <Cookies /> */}
-    <Header />
-    {children}
-    <Footer />
-  </>
-);
+const DefaultLayout = ({ children, match }: any) => {
+  return (
+    <>
+      <Header />
+      {children}
+      <Footer />
+    </>
+  );
+};
 
 export default function Routes() {
   return (
     <>
-      <Cookies />
-
       <BrowserRouter>
         <Switch>
           <RouteWrapper
