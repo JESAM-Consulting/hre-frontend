@@ -1,0 +1,112 @@
+@import '../../../../styles/mixins/global.scss';
+
+.hero-section {
+
+    position: relative;
+
+    .large-image-style {
+        img {
+            width: 100%;
+            height: calc(100vh - 83px);
+            object-fit: cover;
+            object-position: center;
+
+            @include breakpoint("max-sm") {
+                height: 200px;
+            }
+        }
+    }
+
+    .bottom-banner-image-dummy-align {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .image-wrapper-alignment {
+        width: 100%;
+        margin: 0 0 98px 0;
+        background: rgba(255, 255, 255, 0.77);
+        height: 89px;
+        position: relative;
+
+        @include breakpoint("max-md") {
+            height: 52px;
+        }
+
+        @include breakpoint("max-sm") {
+            margin: 0 0 20px 0;
+            height: 15px;
+        }
+
+        .logo-center-alignment {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+
+            img {
+                max-width: 208px;
+                height: 148px;
+
+                @include breakpoint("max-md") {
+                    max-width: 166px;
+                }
+
+                @include breakpoint("max-sm") {
+                    max-width: 45px;
+                }
+            }
+        }
+    }
+
+    @include breakpoint("max-md") {
+        height: 555px;
+    }
+
+    @include breakpoint("max-sm") {
+        height: 200px;
+    }
+
+
+}
+
+.button-style-slider {
+    width: 50px;
+    height: 50px;
+    background-color: var(--gray-color);
+    border-radius: 50%;
+    @include flex-center;
+    justify-content: center;
+    @include pointer;
+
+    svg {
+        width: 18px;
+    }
+}
+
+.next-button-align-slider {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    z-index: 99999;
+
+    svg {
+        transform: rotate(180deg);
+    }
+}
+
+.prev-button-align-slider {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99999;
+
+
+}
+
+.hero-section-slider-section-alignment {
+    overflow-x: hidden;
+}

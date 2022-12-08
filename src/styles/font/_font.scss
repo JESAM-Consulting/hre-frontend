@@ -1,0 +1,50 @@
+@import '../variables/variables';
+
+@mixin font-family-bold {
+    font-family: $font-family-bold;
+}
+
+@mixin font-family-light {
+    font-family: $font-family-light;
+}
+
+@mixin font-family-medium {
+    font-family: $font-family-medium;
+}
+
+@mixin font-family-medium {
+    font-family: $font-family-normal;
+}
+
+
+// bold font-style//
+
+@font-face {
+    font-family: $font-family-bold;
+    src: url("../../assets/font/VisbyBold.otf");
+}
+
+// bold font-style//
+
+//light-font-style//
+
+@font-face {
+    font-family: $font-family-light;
+    src: url("../../assets/font/VisbyCF-LightOblique.otf");
+}
+
+//light-font-style//
+
+//medium-font-style//
+
+@font-face {
+    font-family: $font-family-medium;
+    src: url("../../assets/font/VisbyCF-Medium.otf");
+}
+
+//medium-font-style//
+
+@font-face {
+    font-family: $font-family-normal;
+    src: url("../../assets/font/VisbyCF-Regular.otf");
+}

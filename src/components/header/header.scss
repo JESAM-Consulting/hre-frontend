@@ -1,0 +1,198 @@
+@import '../../styles/mixins/global.scss';
+
+.header-sticky {
+    @include breakpoint("max-sm") {
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+    }
+}
+
+.header {
+    background-color: var(--gray-color);
+    padding: 11px 0;
+
+
+    .header-alignment {
+        @include flex-center;
+        justify-content: space-between;
+    }
+
+    .mobile-toggle {
+        display: none;
+
+        img {
+            @include pointer;
+        }
+
+        @include breakpoint("max-sm") {
+            display: block;
+        }
+    }
+
+    .logo {
+        img {
+            max-width: 221px;
+            @include pointer;
+
+            @include breakpoint("max-md") {
+                max-width: 221px;
+            }
+
+            @include breakpoint("max-sm") {
+                max-width: 150px;
+            }
+        }
+    }
+
+    .mobile-view-logo-hidden {
+        @include breakpoint("max-sm") {
+            display: none;
+        }
+    }
+
+    .mobile-view-logo-show {
+        display: none;
+
+        @include breakpoint("max-sm") {
+            display: block;
+        }
+    }
+
+    .menu {
+        @include breakpoint("max-sm") {
+            display: none;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            @include flex-center;
+            list-style: none;
+
+            li:last-child {
+                padding: 0;
+            }
+
+            a:last-child {
+                padding: 0;
+            }
+
+            a {
+                padding-right: 38px;
+                display: block;
+            }
+
+            li {
+                @include normal-12;
+                text-transform: uppercase;
+                padding-right: 38px;
+                position: relative;
+                color: var(--text-white);
+
+                &:hover {
+                    &::before {
+                        transform: scaleX(1);
+                        opacity: 1;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    width: 100%;
+                    bottom: -8px;
+                    left: 0;
+                    background-color: #fff;
+                    -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
+                    -webkit-transform-origin: left;
+                    transform-origin: left;
+                    opacity: 0;
+                    transition: opacity .3s ease-out, -webkit-transform .3s ease-out;
+                    transition: transform .3s ease-out, opacity .3s ease-out;
+                    transition: transform .3s ease-out, opacity .3s ease-out, -webkit-transform .3s ease-out;
+                }
+            }
+        }
+    }
+}
+
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.header-mobile-design {
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+    right: 0;
+    width: calc(100% - 30px);
+    height: 100%;
+    background: #474F5D;
+
+    .mobile-view-body {
+        padding: 16px;
+
+        ul {
+            margin: 0;
+            padding: 20px 0;
+            list-style: none;
+
+            li:last-child {
+                padding: 0;
+            }
+
+            a {
+                display: block;
+                padding-bottom: 30px;
+            }
+
+            li {
+                @include normal-12;
+                font-size: 20px;
+                line-height: 30px;
+                text-transform: uppercase;
+                padding-right: 38px;
+                color: var(--text-white);
+            }
+        }
+    }
+
+    .mobile-view-head-design {
+        padding: 16px;
+        border-bottom: 1px solid #d0d0d0;
+        @include flex-center;
+        justify-content: space-between;
+
+        i {
+            font-size: 20px;
+            color: #fff;
+            @include pointer;
+        }
+
+        div {
+            img {
+                max-width: 140px;
+            }
+        }
+    }
+}
+
+
+.mobile-header-hidden {
+    transform: translateX(100%);
+    transition: .3s ease-in-out;
+}
+
+.mobile-header-show {
+    transform: translateX(0%);
+    transition: .3s ease-in-out;
+}
