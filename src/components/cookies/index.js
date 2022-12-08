@@ -119,15 +119,15 @@ export default function CookieForm(props) {
           personalisierte Empfehlungen und Werbung auszuspielen. Hierfür bitten
           wir um Ihre Einwilligung. Sie können diese jederzeit – auch später
           noch ändern oder widerrufen. Mehr erfahren Sie in der{" "}
-          <NavLink to="/datenschutzerklarung">
+          <NavLink to="/datenschutz">
             <a className="text-primary">Datenschutzerklärung</a>
           </NavLink>
         </p>
         <div className="flex text-sm my-6 space-x-6">
-          <NavLink to="/datenschutzerklarung">
+          <NavLink to="/datenschutz">
             <a className="text-primary underline">Datenschutz</a>
           </NavLink>
-          <NavLink to="/impressum">
+          <NavLink to="/impressum-page">
             <a className="text-primary underline">Impressum</a>
           </NavLink>
         </div>
