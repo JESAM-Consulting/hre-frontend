@@ -42,20 +42,7 @@ export default function HeroSection() {
               </div>
             </div>
           </div>
-          <div>
-            <div className="hero-section">
-              <div className="large-image-style">
-                <img src={HeroBanner} alt="HeroBanner" />
-              </div>
-              <div className="bottom-banner-image-dummy-align">
-                <div className="image-wrapper-alignment">
-                  <div className="logo-center-alignment">
-                    <img src={HRELogo} alt="HRELogo" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+         
           <div>
             <div className="hero-section">
               <div className="large-image-style">
