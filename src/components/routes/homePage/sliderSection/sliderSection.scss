@@ -92,6 +92,7 @@
 
         .flex-items {
             .image-style {
+                position: relative;
                 img {
                     width: 100%;
                     object-fit: cover;
@@ -103,6 +104,17 @@
 
                     @include breakpoint("max-sm") {
                         height: 383px;
+                    }
+                }
+                .herzlichImage{
+                    position: absolute;
+                    bottom: 25px;
+                    right: 25px;
+                    width: 80px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
                     }
                 }
             }

@@ -1,6 +1,8 @@
 import React from "react";
 import "./expertiseSection.scss";
-import ExpartImage from "../../../../assets/images/expert-banner1.png";
+import ExpartImage from "../../../../assets/images/expert-banner2.png";
+import HRELogo from "../../../../assets/logo/HRE_WHITE.svg";
+
 export default function ExpertiseSection() {
   return (
     <div>
@@ -73,6 +75,13 @@ export default function ExpertiseSection() {
                 src={ExpartImage}
                 alt="ExpartImage"
               />
+              <div className="hrelogopostion ">
+
+               <img
+                    src={HRELogo}
+                    alt="HerzlichImage"
+                  />
+              </div>
             </div>
           </div>
         </div>

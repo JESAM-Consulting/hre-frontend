@@ -7,6 +7,7 @@ import InstaIcon from "../../assets/icons/insta.svg";
 import FooterImage from "../../assets/images/256.svg";
 import FooterImage1 from "../../assets/images/80.svg";
 import LinkdinIcon from "../../assets/icons/linkdin.svg";
+import HRELogo from "../../assets/logo/HRE_WHITE.svg";
 import HreGroupImage from "../../assets/images/hre-group.svg";
 import { toNamespacedPath } from "path";
 import axios from "axios";
@@ -287,7 +288,7 @@ export default function Footer() {
                 onClick={() => handleRedirect()}
               >
                 <NavLink to="/">
-                  <img src={HreGroupImage} alt="HreGroupImage" />
+                  <img src={HRELogo} alt="HreGroupImage" />
                 </NavLink>
               </div>
               {/* code */}

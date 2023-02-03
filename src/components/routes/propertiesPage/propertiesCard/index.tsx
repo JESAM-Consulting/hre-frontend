@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import axios from "axios";
 import LeftIcon from "../../../../assets/icons/slider-left.svg";
 import RightIcon from "../../../../assets/icons/slider-right.svg";
+import HRE_WHITE from "../../../../assets/logo/HRE_WHITE.svg";
 import ImageGallery from "react-image-gallery";
 
 function SampleNextArrow(props: any) {
@@ -31,6 +32,7 @@ export default function PropertiesCard() {
   const [mapdata, setMapData] = useState<any>([]);
   const [slidersImg, setSlidersImg] = useState<any>([]);
   const [sliderModalOpen, setSliderModalOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true)
 
   const propImage: any = [];
 
@@ -46,6 +48,7 @@ export default function PropertiesCard() {
   }, []);
 
   const propertyCardData = async () => {
+    setIsLoading(true)
     await axios
       .get("https://api.hre.rejoicehub.com/api/v1/dataSchema/getDataSchema")
       .then((res) => {
@@ -58,8 +61,13 @@ export default function PropertiesCard() {
                 ?.anhaenge?.[0]?.anhang
           )
         );
+        setIsLoading(false)
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.log(error)
+        setIsLoading(false)
+      });
+
   };
 
   const settings = {
@@ -119,7 +127,7 @@ export default function PropertiesCard() {
 
   const makeData22 = (kauf: any) => {
     let filteredData = [];
-    let notGrundData= []
+    let notGrundData = []
     notGrundData = cardData?.filter(
       (item: any, i: any) =>
         !(
@@ -567,6 +575,13 @@ export default function PropertiesCard() {
           </div>
         </div>
       </div> */}
+      {isLoading &&
+        <div>
+          <div className="loader-wrapper-page">
+            <img src={HRE_WHITE} alt="HRE_WHITE" />
+          </div>
+        </div>
+      }
     </div>
   );
 }

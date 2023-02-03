@@ -1,9 +1,9 @@
 import Slider from "react-slick";
 import "./sliderSection.scss";
-import SliderImage from "../../../../assets/images/slider-image.png";
+import HRELogo from "../../../../assets/logo/HRE_WHITE.svg";
 import LeftIcon from "../../../../assets/icons/slider-left.svg";
 import RightIcon from "../../../../assets/icons/slider-right.svg";
-import react , {useState , useEffect} from "react";
+import react, { useState, useEffect } from "react";
 import axios from "axios";
 import ReactHtmlParser from "react-html-parser";
 
@@ -59,7 +59,7 @@ export default function SliderSection() {
       )
       .then((res) => {
         setCardData(res?.data?.payload?.contact);
-        
+
       })
       .catch((error) => console.log(error));
   };
@@ -68,14 +68,21 @@ export default function SliderSection() {
       <div className="slider-section-all-content-alignment">
         <div className="container">
           <Slider {...settings}>
-            {cardData && cardData?.map((data : any) => {
-              console.log("data",data)
+            {cardData && cardData?.map((data: any) => {
+              console.log("data", data)
               return (
                 <div>
                   <div className="flex-box">
                     <div className="flex-items">
                       <div className="image-style">
                         <img src={data?.image} alt="SliderImage" />
+                        <div className="herzlichImage">
+
+                          <img
+                            src={HRELogo}
+                            alt="HerzlichImage"
+                          />
+                        </div>
                       </div>
                     </div>
                     <div className="flex-items">
@@ -87,8 +94,8 @@ export default function SliderSection() {
                       </div>
                       <div className="child-text-style">
                         <p>
-                       {/* {ReactHtmlParser(data?.field3)} */}
-                       {ReactHtmlParser(`${data?.field3}`)}
+                          {/* {ReactHtmlParser(data?.field3)} */}
+                          {ReactHtmlParser(`${data?.field3}`)}
                         </p>
                         {/* <p>
                           Bei der zuletzt genannten Transaktion in

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./header.scss";
-import HrmsLogo from "../../assets/logo/update-new-logo.png";
+import HrmsLogo from "../../assets/logo/HRE_WHITE.svg";
 import MobileMenu from "../../assets/icons/mobile-menu.svg";
-import HrmsLogoMobile from "../../assets/logo/update-new-logo-new.png";
+import HrmsLogoMobile from "../../assets/logo/HRE_WHITE.svg";
 import { NavLink } from "react-router-dom";
 export default function Header() {
   const [headerOpen, setHeaderOpen] = useState(false);

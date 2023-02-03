@@ -1,8 +1,7 @@
 import React from "react";
 import "./heroSection.scss";
-import HRELogo from "../../../../assets/logo/hre-lg-logo-1.svg";
+import HRELogo from "../../../../assets/logo/HRE_WHITE.svg";
 import Slider from "react-slick";
-
 import UpdateHero from "../../../../assets/images/update-hero.png";
 import HeroBanner from "../../../../assets/images/09.png";
 import HeroBanner1 from "../../../../assets/images/02.png";
@@ -12,6 +11,8 @@ import HeroBanner5 from "../../../../assets/images/05.png";
 import HeroBanner6 from "../../../../assets/images/06.png";
 import HeroBanner7 from "../../../../assets/images/07.png";
 import HeroBanner8 from "../../../../assets/images/08.png";
+import HeroBannerGif from "../../../../assets/images/hero-banner-gif.gif";
+import { NavLink } from "react-router-dom";
 
 export default function HeroSection() {
   const settings = {
@@ -28,7 +29,7 @@ export default function HeroSection() {
     <div id="redirect">
       <div className="hero-section-slider-section-alignment">
         <Slider {...settings}>
-          <div>
+          <div className="relative-main-div">
             <div className="hero-section">
               <div className="large-image-style">
                 <img src={UpdateHero} alt="updateHero" />
@@ -41,9 +42,24 @@ export default function HeroSection() {
                 </div>
               </div>
             </div>
+            <div className="hero-section-top-content-alignment-here">
+              <div className="top-content-alignment">
+                <a href="https://bewertung.hre-immobilien.de/" target="_blank">
+                  <div className="gif-center-alignment">
+                    <img src={HeroBannerGif} alt="HeroBannerGif" />
+                  </div>
+                  <div className="hero-content-button-alignment">
+                    <button>
+                      Immobilie jetzt <br /> bewerten lassen!
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
+
           </div>
-         
-          <div>
+
+          <div className="relative-main-div">
             <div className="hero-section">
               <div className="large-image-style">
                 <img src={HeroBanner1} alt="HeroBanner1" />
@@ -56,8 +72,22 @@ export default function HeroSection() {
                 </div>
               </div>
             </div>
+            <div className="hero-section-top-content-alignment-here">
+              <div className="top-content-alignment">
+                <a href="https://bewertung.hre-immobilien.de/" target="_blank">
+                  <div className="gif-center-alignment">
+                    <img src={HeroBannerGif} alt="HeroBannerGif" />
+                  </div>
+                  <div className="hero-content-button-alignment">
+                    <button>
+                      Immobilie jetzt <br /> bewerten lassen!
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
-          <div>
+          <div className="relative-main-div">
             <div className="hero-section">
               <div className="large-image-style">
                 <img src={HeroBanner3} alt="HeroBanner3" />
@@ -70,8 +100,22 @@ export default function HeroSection() {
                 </div>
               </div>
             </div>
+            <div className="hero-section-top-content-alignment-here">
+              <div className="top-content-alignment">
+                <a href="https://bewertung.hre-immobilien.de/" target="_blank">
+                  <div className="gif-center-alignment">
+                    <img src={HeroBannerGif} alt="HeroBannerGif" />
+                  </div>
+                  <div className="hero-content-button-alignment">
+                    <button>
+                      Immobilie jetzt <br /> bewerten lassen!
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
-          <div>
+          <div className="relative-main-div">
             <div className="hero-section">
               <div className="large-image-style">
                 <img src={HeroBanner4} alt="HeroBanner4" />
@@ -84,8 +128,22 @@ export default function HeroSection() {
                 </div>
               </div>
             </div>
+            <div className="hero-section-top-content-alignment-here">
+              <div className="top-content-alignment">
+                <a href="https://bewertung.hre-immobilien.de/" target="_blank">
+                  <div className="gif-center-alignment">
+                    <img src={HeroBannerGif} alt="HeroBannerGif" />
+                  </div>
+                  <div className="hero-content-button-alignment">
+                    <button>
+                      Immobilie jetzt <br /> bewerten lassen!
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
-          <div>
+          <div className="relative-main-div">
             <div className="hero-section">
               <div className="large-image-style">
                 <img src={HeroBanner5} alt="HeroBanner5" />
@@ -98,8 +156,22 @@ export default function HeroSection() {
                 </div>
               </div>
             </div>
+            <div className="hero-section-top-content-alignment-here">
+              <div className="top-content-alignment">
+                <a href="https://bewertung.hre-immobilien.de/" target="_blank">
+                  <div className="gif-center-alignment">
+                    <img src={HeroBannerGif} alt="HeroBannerGif" />
+                  </div>
+                  <div className="hero-content-button-alignment">
+                    <button>
+                      Immobilie jetzt <br /> bewerten lassen!
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
-          <div>
+          <div className="relative-main-div">
             <div className="hero-section">
               <div className="large-image-style">
                 <img src={HeroBanner6} alt="HeroBanner6" />
@@ -112,8 +184,22 @@ export default function HeroSection() {
                 </div>
               </div>
             </div>
+            <div className="hero-section-top-content-alignment-here">
+              <div className="top-content-alignment">
+                <a href="https://bewertung.hre-immobilien.de/" target="_blank">
+                  <div className="gif-center-alignment">
+                    <img src={HeroBannerGif} alt="HeroBannerGif" />
+                  </div>
+                  <div className="hero-content-button-alignment">
+                    <button>
+                      Immobilie jetzt <br /> bewerten lassen!
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
-          <div>
+          <div className="relative-main-div">
             <div className="hero-section">
               <div className="large-image-style">
                 <img src={HeroBanner7} alt="HeroBanner7" />
@@ -126,8 +212,22 @@ export default function HeroSection() {
                 </div>
               </div>
             </div>
+            <div className="hero-section-top-content-alignment-here">
+              <div className="top-content-alignment">
+                <a href="https://bewertung.hre-immobilien.de/" target="_blank">
+                  <div className="gif-center-alignment">
+                    <img src={HeroBannerGif} alt="HeroBannerGif" />
+                  </div>
+                  <div className="hero-content-button-alignment">
+                    <button>
+                      Immobilie jetzt <br /> bewerten lassen!
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
-          <div>
+          <div className="relative-main-div">
             <div className="hero-section">
               <div className="large-image-style">
                 <img src={HeroBanner8} alt="HeroBanner8" />
@@ -138,6 +238,20 @@ export default function HeroSection() {
                     <img src={HRELogo} alt="HRELogo" />
                   </div>
                 </div>
+              </div>
+            </div>
+            <div className="hero-section-top-content-alignment-here">
+              <div className="top-content-alignment">
+                <a href="https://bewertung.hre-immobilien.de/" target="_blank">
+                  <div className="gif-center-alignment">
+                    <img src={HeroBannerGif} alt="HeroBannerGif" />
+                  </div>
+                  <div className="hero-content-button-alignment">
+                    <button>
+                      Immobilie jetzt <br /> bewerten lassen!
+                    </button>
+                  </div>
+                </a>
               </div>
             </div>
           </div>

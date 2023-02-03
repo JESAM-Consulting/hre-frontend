@@ -32,7 +32,7 @@
 
     .logo {
         img {
-            max-width: 221px;
+            width: 75px;
             @include pointer;
 
             @include breakpoint("max-md") {
@@ -180,7 +180,7 @@
 
         div {
             img {
-                max-width: 140px;
+                width: 60px;
             }
         }
     }

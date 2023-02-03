@@ -1,14 +1,15 @@
 import React from "react";
 import "./herzlichSection.scss";
-import HerzlichImage from "../../../../assets/images/herzlich-new1.png";
+import HerzlichImage from "../../../../assets/images/herzlich-new2.png";
 import CapaImage from "../../../../assets/images/capa.svg";
 import { NavLink } from "react-router-dom";
+import HRELogo from "../../../../assets/logo/HRE_WHITE.svg";
 
 export default function HerzlichSection() {
   return (
     <>
       <div className="herzlich-section-banner">
-        <div className="container-sm">
+        <div className="container-lg-4">
           <div className="mobile-view-some-image-show">
             <img src={CapaImage} alt="CapaImage" />
           </div>
@@ -65,6 +66,12 @@ export default function HerzlichSection() {
                   src={HerzlichImage}
                   alt="HerzlichImage"
                 />
+                <div className="hreimage">
+                  <img
+                    src={HRELogo}
+                    alt="HerzlichImage"
+                  />
+                </div>
               </div>
             </div>
           </div>
