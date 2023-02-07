@@ -8,6 +8,7 @@ import HerzlichSection from "./herzlichSection";
 import "./homePage.scss";
 import InformationSection from "./informationSection";
 import SliderSection from "./sliderSection";
+import ReviewSection from "./ReviewSection";
 export default function HomePage() {
   useEffect(() => {
     window.scrollTo({
@@ -31,6 +32,7 @@ export default function HomePage() {
         <InformationSection />
         <ExpertiseSection />
         <SliderSection />
+        <ReviewSection/>
       </motion.div>
     </div>
   );

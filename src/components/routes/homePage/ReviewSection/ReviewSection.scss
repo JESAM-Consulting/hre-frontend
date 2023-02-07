@@ -1,0 +1,152 @@
+@import "../../../../styles/mixins/global.scss";
+
+.review-section-all-content-alignment {
+  padding: 60px 0 120px 0;
+
+  @include breakpoint("max-sm") {
+    padding: 60px 0 60px 0;
+  }
+
+  .slick-slide {
+    padding: 0 10px;
+  }
+
+  .slick-list {
+    margin: 0 -10px;
+  }
+
+  .left-new-slider-section-alignment {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    @include breakpoint("max-sm") {
+      display: none;
+    }
+  }
+  .right-new-slider-section-alignment {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+
+    @include breakpoint("max-sm") {
+      display: none;
+    }
+    img {
+      transform: rotate(180deg);
+    }
+  }
+
+  .review-all-text {
+    padding: 0 0 50px 0;
+    p {
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      text-transform: uppercase;
+      color: #000000;
+      text-align: center;
+
+      @include breakpoint("max-sm") {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 37px;
+        font-family: "Raleway", sans-serif;
+      }
+    }
+  }
+
+  .review-main-box-design {
+    background: #f7f7f7;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 22px;
+
+    .rating {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .text-style {
+      p {
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 172.7%;
+        letter-spacing: -0.035em;
+        color: #575757;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+
+    .rating-text-star-alignment {
+      display: flex;
+      gap: 6px;
+      padding: 0 0 6px 0;
+      align-items: center;
+
+      .text {
+        span {
+          display: block;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 142.2%;
+          font-family: "Poppins", sans-serif;
+          letter-spacing: -0.035em;
+          color: #717274;
+        }
+      }
+    }
+
+    .review-profile {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 9px;
+      padding: 0 0 11px 0;
+
+      div {
+        p {
+          font-weight: 400;
+          font-size: 11px;
+          line-height: 142.2%;
+          font-family: "Poppins", sans-serif;
+          color: #000000;
+        }
+
+        span {
+          display: block;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 142.2%;
+          color: #717274;
+        }
+      }
+
+      .profile-image {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px solid #000000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 80.7%;
+        color: #000000;
+      }
+    }
+  }
+}
