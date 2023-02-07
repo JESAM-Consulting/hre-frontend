@@ -50,6 +50,24 @@ export default function Kontakt() {
           </div>
         </div>
       </div>
+      <div className="contact-banner-new-phase">
+        <div className="container-md-4">
+          <div className="grid">
+            <div className="grid-items"></div>
+            <div className="grid-items">
+              <h4>Werden Sie Tippgeber</h4>
+              <p>
+                Werden Sie Tippgeber und erhalten Sie für jeden hergestellten Kontakt 
+                Geld, der zu einer erfolgreichen Vermittlung durch uns führt! 
+              </p>
+              <span>
+                Beispiel: Verkaufspreis einer Immobilie für 500.000,- 
+                € bedeutet für Sie 3.000,- €!
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
