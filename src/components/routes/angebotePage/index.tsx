@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./angebotePage.scss";
 import PartnerSection from "./partnerSection";
+import UserWorkFlow from "./UserWorkFlow";
 export default function AngebotePage() {
   useEffect(() => {
     window.scrollTo({
@@ -82,6 +83,7 @@ export default function AngebotePage() {
         </div>
       </div>
       <PartnerSection />
+      <UserWorkFlow/>
     </div>
   );
 }
