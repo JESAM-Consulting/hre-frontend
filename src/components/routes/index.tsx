@@ -13,6 +13,7 @@ import Abgs from "./abgs";
 import Cookies from "../cookies";
 import Datenschutz from "./datenschutz";
 import ScrollUp from "../scrollUp";
+import Referenzen from "./Referenzen";
 
 const DefaultLayoutLoader = ({ children, match }: any) => {
   const [loaderStart, setLoaderStart] = useState(false);
@@ -115,6 +116,12 @@ export default function Routes() {
             exact={true}
             path="/properties-details/:id"
             component={PropertiesDetails}
+            layout={DefaultLayout}
+          />
+          <RouteWrapper
+            exact={true}
+            path="/referenzen"
+            component={Referenzen}
             layout={DefaultLayout}
           />
           <RouteWrapper
