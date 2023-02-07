@@ -4,12 +4,12 @@ import HRELogo from "../../../../assets/logo/HRE_WHITE.svg";
 import Slider from "react-slick";
 import UpdateHero from "../../../../assets/images/update-hero.png";
 import HeroBanner from "../../../../assets/images/09.png";
-import HeroBanner1 from "../../../../assets/images/02.png";
-import HeroBanner3 from "../../../../assets/images/03.png";
-import HeroBanner4 from "../../../../assets/images/04.png";
-import HeroBanner5 from "../../../../assets/images/05.png";
-import HeroBanner6 from "../../../../assets/images/06.png";
-import HeroBanner7 from "../../../../assets/images/07.png";
+import HeroBanner1 from "../../../../assets/images/Titel1.jpg";
+import HeroBanner3 from "../../../../assets/images/Titel2.jpg";
+import HeroBanner4 from "../../../../assets/images/Titel3.jpg";
+import HeroBanner5 from "../../../../assets/images/Titel4.jpg";
+import HeroBanner6 from "../../../../assets/images/Titel5.jpg";
+import HeroBanner7 from "../../../../assets/images/Titel6.jpg";
 import HeroBanner8 from "../../../../assets/images/08.png";
 import HeroBannerGif from "../../../../assets/images/hero-banner-gif.gif";
 import { NavLink } from "react-router-dom";
@@ -29,7 +29,7 @@ export default function HeroSection() {
     <div id="redirect">
       <div className="hero-section-slider-section-alignment">
         <Slider {...settings}>
-          <div className="relative-main-div">
+          {/* <div className="relative-main-div">
             <div className="hero-section">
               <div className="large-image-style">
                 <img src={UpdateHero} alt="updateHero" />
@@ -57,7 +57,7 @@ export default function HeroSection() {
               </div>
             </div>
 
-          </div>
+          </div> */}
 
           <div className="relative-main-div">
             <div className="hero-section">
@@ -227,7 +227,7 @@ export default function HeroSection() {
               </div>
             </div>
           </div>
-          <div className="relative-main-div">
+          {/* <div className="relative-main-div">
             <div className="hero-section">
               <div className="large-image-style">
                 <img src={HeroBanner8} alt="HeroBanner8" />
@@ -254,7 +254,7 @@ export default function HeroSection() {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </Slider>
       </div>
     </div>
