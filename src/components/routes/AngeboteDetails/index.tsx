@@ -55,7 +55,7 @@ export default function AngeboteDetails() {
           </div>
           <div className="qa-all-details-content-alignment">
             <div className="first-title">
-                <h5>Q&A</h5>
+              <h5>Q&A</h5>
             </div>
             <div>
               <div className="qa-main-section">
@@ -145,49 +145,65 @@ export default function AngeboteDetails() {
           <div className="ihr-all-contnet-alignment">
             <h6>Ihr Weg zur persönlichen Beratung</h6>
             <div className="sub-grid">
-                <div className="sub-grid-items">
-                    <p>
-                        Sie haben Fragen oder brauchen Unterstützung? Geben Sie einfach die Postleitzahl Ihres Wohnortes oder Ihrer Immobilie ein und Sie werden automatisch 
-                        auf die Seite Ihres Experten-Teams vor Ort weitergeleitet. Unsere Kolleg*innen freuen sich auf Sie!
-                    </p>
-                </div>
-                <div className="sub-grid-items">
-                    <label>Postleitzahl</label>
-                    <input type="text" placeholder="PLZ eingeben"/>
-                    <button>Jetzt Bedarfsausweis bestellen</button>
-                </div>
+              <div className="sub-grid-items">
+                <p>
+                  Sie haben Fragen oder brauchen Unterstützung? Geben Sie
+                  einfach die Postleitzahl Ihres Wohnortes oder Ihrer Immobilie
+                  ein und Sie werden automatisch auf die Seite Ihres
+                  Experten-Teams vor Ort weitergeleitet. Unsere Kolleg*innen
+                  freuen sich auf Sie!
+                </p>
+              </div>
+              <div className="sub-grid-items">
+                <label>Postleitzahl</label>
+                <input type="text" placeholder="PLZ eingeben" />
+                <button>Jetzt Bedarfsausweis bestellen</button>
+              </div>
             </div>
           </div>
           <div className="four-box-new-contnet-alignment">
             <div className="items">
-                <div className="icon-alignment">
-                    <img src={Icons1} alt="Icons1"/>
-                </div>
-                <h6>Immobilie verkaufen</h6>
-                <p>
-                    Immobilienverkauf ist Vertrauenssache. Deswegen sind wir 
-                    in Ihrer Nähe und persönlich für Sie da.
-                </p>
+              <div className="icon-alignment">
+                <img src={Icons1} alt="Icons1" />
+              </div>
+              <h6>Immobilie verkaufen</h6>
+              <p>
+                Immobilienverkauf ist Vertrauenssache. Deswegen sind wir in
+                Ihrer Nähe und persönlich für Sie da.
+              </p>
             </div>
             <div className="items">
-                <div className="icon-alignment">
-                    <img src={Icons2} alt="Icons2"/>
-                </div>
-                <h6>Immobilie finanzieren</h6>
-                <p>
-                Wir begleiten Sie in Ihre ganz persönliche Wohnzukunft. Mit der besten
-                 Auswahl aus über 500 Angeboten finden wir gemeinsam die passende Finanzierung.
-                </p>
+              <div className="icon-alignment">
+                <img src={Icons2} alt="Icons2" />
+              </div>
+              <h6>Immobilie finanzieren</h6>
+              <p>
+                Wir begleiten Sie in Ihre ganz persönliche Wohnzukunft. Mit der
+                besten Auswahl aus über 500 Angeboten finden wir gemeinsam die
+                passende Finanzierung.
+              </p>
             </div>
             <div className="items">
-                <div className="icon-alignment">
-                    <img src={Icons4} alt="Icons4"/>
-                </div>
-                <h6>Immobilie bewerten</h6>
-                <p>
-                    Was ist meine Immobilie wert? Wir beantworten es 
-                    Ihnen - ganz gleich, ob Einfamilienhaus, Eigentumswohnung oder Mehrfamilienhaus.
-                </p>
+              <div className="icon-alignment">
+                <img src={Icons3} alt="Icons3" />
+              </div>
+              <h6>Unsere Standorte</h6>
+              <p>
+                Von der Küste bis in die Berge der Sächsischen Schweiz: Wir sind
+                an 13 Standorten in den neuen Bundesländern zuhause und in ganz
+                Deutschland super vernetzt.
+              </p>
+            </div>
+            <div className="items">
+              <div className="icon-alignment">
+                <img src={Icons4} alt="Icons4" />
+              </div>
+              <h6>Immobilie bewerten</h6>
+              <p>
+                Was ist meine Immobilie wert? Wir beantworten es Ihnen - ganz
+                gleich, ob Einfamilienhaus, Eigentumswohnung oder
+                Mehrfamilienhaus.
+              </p>
             </div>
           </div>
         </div>
