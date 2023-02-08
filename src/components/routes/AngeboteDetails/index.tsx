@@ -9,7 +9,7 @@ import Icons4 from "../../../assets/images/h4.svg";
 import AngeboteDetailsModal from "./AngeboteDetailsModal";
 
 export default function AngeboteDetails() {
-  const [texthidden, setTexthidden] = useState(false);
+  const [ texthidden, setTexthidden ] = useState(false);
   const [ modalOpen , setModalOpen ] = useState(false);
 
   return (
