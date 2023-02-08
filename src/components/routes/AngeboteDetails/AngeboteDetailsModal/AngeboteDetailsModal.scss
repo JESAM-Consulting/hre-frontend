@@ -1,0 +1,121 @@
+@import "../../../../styles/mixins/global.scss";
+
+.abgebote-details-modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 1, 1, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(12px);
+  z-index: 99999;
+
+  .abgebote-details-box {
+    width: 965px;
+    padding: 125px;
+    background-color: #fff;
+    max-height: calc(100vh - 120px);
+    overflow: auto;
+    @include breakpoint("max-sm") {
+        width: calc(100% - 40px);
+        padding: 60px 20px;
+    }
+    .line {
+      width: 104px;
+      height: 1px;
+      background-color: #000;
+    }
+
+    button {
+      background-color: transparent;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: right;
+      padding: 15px 63px;
+      border: 2px solid #474f5d;
+      border-radius: 5px;
+      color: #474f5d;
+    }
+
+    .adresse-text {
+      padding: 0 0 20px 0;
+      h3 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+        margin: 0 0 10px 0;
+
+        @include breakpoint("max-sm") {
+            font-size: 20px;
+            line-height: 28px;
+        }
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        margin: 0;
+        line-height: 30px;
+        color: #2a2a2a;
+
+        @include breakpoint("max-sm") {
+            font-size: 14px;
+            line-height: 22px;
+        }
+      }
+    }
+    .modal-form {
+      padding: 0 0 20px 0;
+      label {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        display: block;
+        padding: 0 0 16px 0;
+        color: #000000;
+      }
+
+      input {
+        width: 100%;
+        height: 34px;
+        background-color: transparent;
+        border: none;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: #000;
+        padding: 0 20px;
+        border-bottom: 1px solid #000000;
+      }
+
+      ::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: #a9a9a9;
+      }
+    }
+
+    h1 {
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      margin: 20px 0 50px 0;
+      color: #2a2a2a;
+
+      @include breakpoint("max-sm") {
+        font-weight: 400;
+        font-size: 32px;
+        margin: 20px 0 30px 0;
+        line-height: 38px;
+      }
+    }
+  }
+}

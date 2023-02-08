@@ -6,9 +6,11 @@ import Icons1 from "../../../assets/images/h1.svg";
 import Icons2 from "../../../assets/images/h2.svg";
 import Icons3 from "../../../assets/images/h3.svg";
 import Icons4 from "../../../assets/images/h4.svg";
+import AngeboteDetailsModal from "./AngeboteDetailsModal";
 
 export default function AngeboteDetails() {
   const [texthidden, setTexthidden] = useState(false);
+  const [ modalOpen , setModalOpen ] = useState(false);
 
   return (
     <div>
@@ -28,7 +30,7 @@ export default function AngeboteDetails() {
               eingeben und nach wenigen Minuten erhalten Sie Ihren persönlichen
               Energieausweis per E-Mail.
             </p>
-            <button>Jetzt Verbrauchsausweis bestellen</button>
+            <button onClick={()=> setModalOpen(!modalOpen)}>Jetzt Verbrauchsausweis bestellen</button>
           </div>
           <div className="warum-details-all-content-alignment">
             <h2>Warum sollte ich hier den Energieausweis bestellen?</h2>
@@ -157,7 +159,7 @@ export default function AngeboteDetails() {
               <div className="sub-grid-items">
                 <label>Postleitzahl</label>
                 <input type="text" placeholder="PLZ eingeben" />
-                <button>Jetzt Bedarfsausweis bestellen</button>
+                <button onClick={()=> setModalOpen(!modalOpen)}>Jetzt Bedarfsausweis bestellen</button>
               </div>
             </div>
           </div>
@@ -208,6 +210,11 @@ export default function AngeboteDetails() {
           </div>
         </div>
       </div>
+      {
+        modalOpen && (
+          <AngeboteDetailsModal/>
+        )
+      }
     </div>
   );
 }
