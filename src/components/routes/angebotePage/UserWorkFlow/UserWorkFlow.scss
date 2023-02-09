@@ -183,6 +183,22 @@
       .grid-items {
         padding: 0 0 40px 0;
       }
+      .grid-items:last-child {
+        margin-top: 50px;
+      }
+      .grid-items:first-child {
+        position: relative;
+        top: -5px;
+      }
+    }
+    .grid:nth-child(4) {
+      .grid-items:first-child {
+        position: relative;
+        top: -5px;
+      }
+      .grid-items:last-child {
+        margin-top: 50px;
+      }
     }
     .grid {
       display: grid;

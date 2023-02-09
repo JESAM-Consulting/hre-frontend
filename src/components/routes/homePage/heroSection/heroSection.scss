@@ -24,6 +24,33 @@
         bottom: 0;
         width: 100%;
     }
+    .bottom-banner-image-dummy-align-one{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        .hero-light-box {
+            background: rgba(71, 79, 93, 0.6);
+            width: 142px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            @include breakpoint("max-sm") {
+                padding: 10px;
+                width: fit-content;
+                justify-content: center;
+            }
+
+            img {
+                @include breakpoint("max-sm") {
+                    max-width: 20px;
+                }
+            }
+        }
+    }
 
     .image-wrapper-alignment {
         width: 100%;
@@ -48,8 +75,8 @@
             right: 88px;
 
             img {
-                max-width: 208px;
-                height: 148px;
+                max-width: 189px;
+                height: 130px;
 
                 @include breakpoint("max-md") {
                     max-width: 166px;
@@ -111,6 +138,7 @@
 
 .hero-section-slider-section-alignment {
     overflow-x: hidden;
+    position: relative;
 }
 
 .hero-section-top-content-alignment-here {

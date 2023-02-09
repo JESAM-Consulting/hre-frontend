@@ -21,7 +21,7 @@ export default function PartnerSection() {
                   className="animate__slideInUp animate__animated wow"
                   data-wow-offset="100"
                 >
-                  dominik Gröne
+                  Lisa Wulf
                 </h5>
                 <h6
                   className="animate__slideInUp animate__animated wow"

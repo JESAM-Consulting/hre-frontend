@@ -583,9 +583,46 @@ export default function Datenschutz() {
               das Impressum und die jeweiligen Datenschutzhinweise auf den
               entsprechenden Webseiten ersichtlich.
             </p>
-            <h2>12. Stand</h2>
+            <h2>12. Energieausweise von „Immoticket24.de GmbH</h2>
+            <p>
+              Die auf diesem Webangebot zur Verfügung gestellte Möglichkeit zur
+              kostenpflichtigen Online-Bestellung von Energieausweisen bei{" "}
+              <a href="https://www.energieausweis-online-erstellen.de/">
+                {" "}
+                https://www.energieausweis-online-erstellen.de{" "}
+              </a>{" "}
+              wird über die „Immoticket24.de GmbH“ (ansässig in Welling,
+              Deutschland) bereitgestellt.
+            </p>
+            <p>
+              Diese Funktion ermöglicht den Nutzern die kostenpflichtige
+              Bestellung von Verbrauchs- oder Bedarfsausweisen nach dem
+              Gebäudeenergiegesetz 2020 (GEG 2020).
+            </p>
+            <p>
+              Wenn Sie Ihre Daten in das Formular zur Erstellung eines Online
+              Energieausweises eintragen und im Schritt
+              „Energieausweis-Basisdaten“ die Schaltfläche
+              „Energieausweis-Erstellung beginnen“ anklicken, werden Ihre Daten
+              zum Zweck der Erstellung des Online- Energieausweises an unseren
+              Kooperationspartner Immoticket24.de GmbH weitergeleitet, die uns
+              die entsprechende Software zur Verfügung stellt und von uns als
+              Auftragsverarbeiter nach der Datenschutzgrundverordnung
+              verpflichtet ist.
+            </p>
+            <p>
+              Ebenso erhalten möglicherweise die von uns zur Bereitstellung
+              unseres Webangebots eingesetzten Dienstleister Zugriff auf Ihre
+              personenbezogenen Daten Die Darstellung der jeweiligen Formulare
+              zur Erstellung des Energieausweises findet bei Aufruf der
+              betreffenden Seiten über die Server des Drittanbieters statt. Der
+              Anbieter protokolliert diese Zugriffe gemäß seiner
+              Datenschutzerklärung in Server-Logfiles und verarbeitet Ihre
+              persönlichen Daten zur Vertragsabwicklung.
+            </p>
+            <h2>13. Stand</h2>
             <p>Es gilt die aktuellste Version dieser Datenschutzerklärung.</p>
-            <p>Stand: 23.09.2022</p>
+            <p>Stand: 08.02.2023</p>
           </div>
         </div>
       </div>
