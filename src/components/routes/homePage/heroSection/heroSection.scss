@@ -14,87 +14,36 @@
             object-position: center;
 
             @include breakpoint("max-sm") {
-                height: 200px;
+                height: 220px;
             }
         }
     }
 
-    .bottom-banner-image-dummy-align {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
-    .bottom-banner-image-dummy-align-one{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
 
-        .hero-light-box {
-            background: rgba(71, 79, 93, 0.6);
-            width: 142px;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-
-            @include breakpoint("max-sm") {
-                padding: 10px;
-                width: fit-content;
-                justify-content: center;
-            }
-
-            img {
-                @include breakpoint("max-sm") {
-                    max-width: 20px;
-                }
-            }
+    @keyframes moveInleft {
+        0% {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+    
+        80% {
+            transform: translateX(10px);
+        }
+        100% {
+            opacity: 1;
+            transform: translate(0);
         }
     }
+  
 
-    .image-wrapper-alignment {
-        width: 100%;
-        margin: 0 0 98px 0;
-        // background: rgba(255, 255, 255, 0.77);
-        height: 89px;
-        position: relative;
-
-        @include breakpoint("max-md") {
-            height: 52px;
-        }
-
-        @include breakpoint("max-sm") {
-            margin: 0 0 20px 0;
-            height: 15px;
-        }
-
-        .logo-center-alignment {
-            position: absolute;
-            // top: 50%;
-            // transform: translate(-50%, -50%);
-            right: 88px;
-
-            img {
-                max-width: 189px;
-                height: 130px;
-
-                @include breakpoint("max-md") {
-                    max-width: 166px;
-                }
-
-                @include breakpoint("max-sm") {
-                    max-width: 45px;
-                }
-            }
-        }
-    }
+   
 
     @include breakpoint("max-md") {
         height: 555px;
     }
 
     @include breakpoint("max-sm") {
-        height: 200px;
+        height: 220px;
     }
 
 
@@ -196,4 +145,87 @@
 
 .relative-main-div {
     position: relative;
+}
+
+.tow-new-s-alignment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 88px;
+
+    @include breakpoint("max-sm") {
+        bottom: 20px;
+    }
+}
+
+
+.bottom-banner-image-dummy-align {
+    padding-right: 88px;
+    @include breakpoint("max-sm") {
+        padding-right: 20px;
+    }
+
+    .image-wrapper-alignment {
+        width: 100%;
+        // background: rgba(255, 255, 255, 0.77);
+        height: 89px;
+        position: relative;
+
+        @include breakpoint("max-md") {
+            height: 52px;
+        }
+
+        @include breakpoint("max-sm") {
+        }
+
+        .logo-center-alignment {
+
+            img {
+                max-width: 189px;
+                height: 130px;
+
+                @include breakpoint("max-md") {
+                    max-width: 166px;
+                }
+
+                @include breakpoint("max-sm") {
+                    max-width: 45px;
+                    height: 52px;
+                }
+            }
+        }
+    }
+}
+
+.bottom-banner-image-dummy-align-one{
+    position: relative;
+    top: 30px;
+
+    @include breakpoint("max-sm") {
+        top: 0;
+    }
+    .hero-light-box {
+        background: rgba(71, 79, 93, 0.6);
+        width: 142px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        @include breakpoint("max-sm") {
+            padding: 10px;
+            width: fit-content;
+            justify-content: center;
+        }
+
+        img {
+            animation: moveInleft 3s linear infinite;
+            @include breakpoint("max-sm") {
+                max-width: 20px;
+            }
+        }
+    }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
-import LoaderLogo from "../../assets/logo/loader-logo.png";
+import LoaderLogo from "../../assets/logo/HRE_WHITE.svg";
 import "./loader.scss";
 export default function Loader() {
   return (
@@ -10,7 +10,7 @@ export default function Loader() {
         initial={{ x: "100vh" }}
         animate={{ x: "0" }}
         transition={{
-          duration: 1.3,
+          duration: 2,
         }}
       >
         <div>

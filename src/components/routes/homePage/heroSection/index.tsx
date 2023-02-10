@@ -19,11 +19,11 @@ export default function HeroSection() {
   const settings = {
     dots: false,
     infinite: true,
-    // autoplaySpeed: 3000,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     pauseOnHover: false,
-    // autoplay: true,
+    autoplay: true,
   };
 
   return (
@@ -35,36 +35,12 @@ export default function HeroSection() {
               <div className="large-image-style">
                 <img src={HeroBanner1} alt="HeroBanner1" />
               </div>
-              <div className="bottom-banner-image-dummy-align">
-                <div className="image-wrapper-alignment">
-                  <div className="logo-center-alignment">
-                    <img src={HRELogo} alt="HRELogo" />
-                  </div>
-                </div>
-              </div>
-              <div className="bottom-banner-image-dummy-align-one">
-                <div className="hero-light-box">
-                  <img src={AssetsImage} alt="AssetsImage"/>
-                </div>
-              </div>
             </div>
           </div>
           <div className="relative-main-div">
             <div className="hero-section">
               <div className="large-image-style">
                 <img src={HeroBanner3} alt="HeroBanner3" />
-              </div>
-              <div className="bottom-banner-image-dummy-align">
-                <div className="image-wrapper-alignment">
-                  <div className="logo-center-alignment">
-                    <img src={HRELogo} alt="HRELogo" />
-                  </div>
-                </div>
-              </div>
-              <div className="bottom-banner-image-dummy-align-one">
-                <div className="hero-light-box">
-                  <img src={AssetsImage} alt="AssetsImage"/>
-                </div>
               </div>
             </div>
           </div>
@@ -73,36 +49,12 @@ export default function HeroSection() {
               <div className="large-image-style">
                 <img src={HeroBanner4} alt="HeroBanner4" />
               </div>
-              <div className="bottom-banner-image-dummy-align">
-                <div className="image-wrapper-alignment">
-                  <div className="logo-center-alignment">
-                    <img src={HRELogo} alt="HRELogo" />
-                  </div>
-                </div>
-              </div>
-              <div className="bottom-banner-image-dummy-align-one">
-                <div className="hero-light-box">
-                  <img src={AssetsImage} alt="AssetsImage"/>
-                </div>
-              </div>
             </div>
           </div>
           <div className="relative-main-div">
             <div className="hero-section">
               <div className="large-image-style">
                 <img src={HeroBanner5} alt="HeroBanner5" />
-              </div>
-              <div className="bottom-banner-image-dummy-align">
-                <div className="image-wrapper-alignment">
-                  <div className="logo-center-alignment">
-                    <img src={HRELogo} alt="HRELogo" />
-                  </div>
-                </div>
-              </div>
-              <div className="bottom-banner-image-dummy-align-one">
-                <div className="hero-light-box">
-                  <img src={AssetsImage} alt="AssetsImage"/>
-                </div>
               </div>
             </div>
           </div>
@@ -111,36 +63,12 @@ export default function HeroSection() {
               <div className="large-image-style">
                 <img src={HeroBanner6} alt="HeroBanner6" />
               </div>
-              <div className="bottom-banner-image-dummy-align">
-                <div className="image-wrapper-alignment">
-                  <div className="logo-center-alignment">
-                    <img src={HRELogo} alt="HRELogo" />
-                  </div>
-                </div>
-              </div>
-              <div className="bottom-banner-image-dummy-align-one">
-                <div className="hero-light-box">
-                  <img src={AssetsImage} alt="AssetsImage"/>
-                </div>
-              </div>
             </div>
           </div>
           <div className="relative-main-div">
             <div className="hero-section">
               <div className="large-image-style">
                 <img src={HeroBanner7} alt="HeroBanner7" />
-              </div>
-              <div className="bottom-banner-image-dummy-align">
-                <div className="image-wrapper-alignment">
-                  <div className="logo-center-alignment">
-                    <img src={HRELogo} alt="HRELogo" />
-                  </div>
-                </div>
-              </div>
-              <div className="bottom-banner-image-dummy-align-one">
-                <div className="hero-light-box">
-                  <img src={AssetsImage} alt="AssetsImage"/>
-                </div>
               </div>
             </div>
           </div>
@@ -157,6 +85,20 @@ export default function HeroSection() {
                 </button>
               </div>
             </a>
+          </div>
+        </div>
+        <div className="tow-new-s-alignment">
+          <div className="bottom-banner-image-dummy-align-one">
+            <div className="hero-light-box">
+              <img src={AssetsImage} alt="AssetsImage" />
+            </div>
+          </div>
+          <div className="bottom-banner-image-dummy-align">
+            <div className="image-wrapper-alignment">
+              <div className="logo-center-alignment">
+                <img src={HRELogo} alt="HRELogo" />
+              </div>
+            </div>
           </div>
         </div>
       </div>

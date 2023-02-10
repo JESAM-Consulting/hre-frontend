@@ -111,10 +111,10 @@
         margin: 0;
         color: #2a2a2a;
 
-        @include breakpoint("max-sm"){
-            font-weight: 400;
-font-size: 10px;
-line-height: 16px;
+        @include breakpoint("max-sm") {
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 16px;
         }
       }
 
@@ -172,16 +172,16 @@ line-height: 16px;
     color: #2a2a2a;
 
     @include breakpoint("max-sm") {
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 38px;
-        padding: 20px 0;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 38px;
+      padding: 20px 0;
     }
   }
 }
 
 .angebote-details-all-content-alignment {
-  padding: 65px 0 142px 0;  
+  padding: 65px 0 142px 0;
 
   @include breakpoint("max-sm") {
     padding: 60px 0;
@@ -191,7 +191,7 @@ line-height: 16px;
     padding: 0 0 30px 0;
 
     @include breakpoint("max-sm") {
-        padding: 0 0 20px 0;
+      padding: 0 0 20px 0;
     }
     h5 {
       font-weight: 400;
@@ -232,7 +232,7 @@ line-height: 16px;
     padding: 20px 0;
 
     @include breakpoint("max-sm") {
-        padding:  14px 0;
+      padding: 14px 0;
     }
     cursor: pointer;
     .answer-hidden {
@@ -254,10 +254,10 @@ line-height: 16px;
         line-height: 28px;
         color: #2a2a2a;
 
-        @include breakpoint("max-sm"){
-            font-weight: 400;
-font-size: 10px;
-line-height: 16px;
+        @include breakpoint("max-sm") {
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 16px;
         }
       }
     }
@@ -277,8 +277,8 @@ line-height: 16px;
         color: #000000;
 
         @include breakpoint("max-sm") {
-            font-size: 16px;
-            line-height: 22px;
+          font-size: 16px;
+          line-height: 22px;
         }
       }
     }
@@ -310,8 +310,8 @@ line-height: 16px;
 
       @include breakpoint("max-sm") {
         font-weight: 400;
-font-size: 10px;
-line-height: 16px;
+        font-size: 10px;
+        line-height: 16px;
       }
     }
 
@@ -327,16 +327,16 @@ line-height: 16px;
         color: #2a2a2a;
 
         @include breakpoint("max-sm") {
-            font-weight: 400;
-font-size: 10px;
-line-height: 16px;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 16px;
         }
       }
     }
   }
 
   .section-content-alignment {
-    padding: 0 0 37px 0;
+    padding: 0 0 80px 0;
     h1 {
       font-weight: 400;
       font-size: 48px;
@@ -380,6 +380,195 @@ line-height: 16px;
         padding: 12px;
         font-size: 12px;
         line-height: 16px;
+      }
+    }
+  }
+}
+
+.two-n-button-alignment {
+  display: flex;
+  gap: 250px;
+  align-items: center;
+
+  @include breakpoint("max-sm") {
+    display: block;
+    gap: 0;
+  }
+
+  button:last-child {
+    background: #7f7f7f;
+    border: 2px solid #7f7f7f;
+    color: #fff;
+
+    @include breakpoint("max-sm") {
+      margin: 16px 0 0 0;
+    }
+  }
+}
+
+.be-all-content-alignment {
+  h4 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    margin: 0 0 40px 0;
+    color: #2a2a2a;
+  
+    
+    @include breakpoint("max-sm") {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  .table-max-width {
+    max-width: 916px;
+    @include breakpoint("max-sm") {
+      white-space: nowrap;
+      padding: 0 0 10px 0;
+      overflow: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      tr:first-child {
+        td {
+          padding-top: 0px;
+        }
+      }
+
+      tr:last-child {
+        border: none;
+        td {
+          padding-bottom: 0px;
+        }
+      }
+
+      tr {
+        border-bottom: 1px solid #7f7f7f;
+
+        td {
+          padding: 23px 10px;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 23px;
+
+          @include breakpoint("max-sm") {
+            font-size: 14px;
+            padding: 15px;
+            line-height: 20px;
+          }
+          color: #000000;
+        }
+      }
+    }
+  }
+}
+
+.new-two-box-content-alignment {
+  padding: 80px 0;
+
+  @include breakpoint("max-sm") {
+    padding: 60px 0;
+  }
+
+  .col-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 20px;
+    }
+
+    .col-grid-items {
+      border: 1px solid #7f7f7f;
+      padding: 50px;
+      background: #fdfdfd;
+      @include breakpoint("max-sm" ) {
+        padding: 40px 20px;
+      }
+      .icon-center-alignment {
+        padding: 0 0 20px 0;
+      }
+
+      h6 {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0 0 30px 0;
+        color: #000000;
+
+        @include breakpoint("max-sm") {
+          font-size: 18px;
+          line-height: 25px;
+          margin: 0 0 0 0;
+        }
+      }
+
+      h5 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 40px;
+        margin: 0 0 5px 0;
+        color: #000000;
+      }
+
+      .line {
+        width: 104px;
+        height: 1px;
+        background-color: #000;
+      }
+
+      .two-button-style {
+        button:first-child {
+          border: 2px solid #474f5d;
+          border-radius: 5px;
+          color: #474f5d;
+          margin: 0 0 12px 0;
+        }
+
+        button:last-child {
+          background: #7f7f7f;
+          /* Primary_color */
+
+          border: 2px solid #7f7f7f;
+          border-radius: 5px;
+          color: #fff;
+        }
+        button {
+          padding: 15px 12px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          min-width: 291px;
+          color: #ffffff;
+
+          @include breakpoint("max-sm") {
+            min-width: 100%;
+            font-size: 12px;
+            line-height: 14px;
+            padding: 14px;
+          }
+        }
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        max-width: 466px;
+        line-height: 30px;
+        color: #000000;
+        margin: 5px 0 30px 0;
+
+        @include breakpoint("max-sm") {
+          font-size: 14px;
+          line-height: 20px;
+          margin: 10px 0 20px 0;
+        }
       }
     }
   }

@@ -6,6 +6,7 @@ import Icons1 from "../../../assets/images/h1.svg";
 import Icons2 from "../../../assets/images/h2.svg";
 import Icons3 from "../../../assets/images/h3.svg";
 import Icons4 from "../../../assets/images/h4.svg";
+import VerbrauchsausweisIcon from "../../../assets/images/Verbrauchsausweis.svg";
 import AngeboteDetailsModal from "./AngeboteDetailsModal";
 
 export default function AngeboteDetails() {
@@ -30,7 +31,10 @@ export default function AngeboteDetails() {
               eingeben und nach wenigen Minuten erhalten Sie Ihren persönlichen
               Energieausweis per E-Mail.
             </p>
-            <button onClick={()=> setModalOpen(!modalOpen)}>Jetzt Verbrauchsausweis bestellen</button>
+            <div className="two-n-button-alignment">
+              <button onClick={()=> setModalOpen(!modalOpen)}>Jetzt Verbrauchsausweis bestellen</button>
+              <button onClick={()=> setModalOpen(!modalOpen)}>Jetzt Bedarfsausweis bestellen</button>
+            </div>
           </div>
           <div className="warum-details-all-content-alignment">
             <h2>Warum sollte ich hier den Energieausweis bestellen?</h2>
@@ -54,6 +58,66 @@ export default function AngeboteDetails() {
               <li>telefonischer Support bei Fragen</li>
               <li>hohe Ersparnis gegenüber der Erstellung vor Ort</li>
             </ol>
+          </div>
+          <div className="be-all-content-alignment">
+            <h4>Bedarfsausweis oder Verbrauchs­ausweis – was benötige ich?</h4>
+            <div className="table-max-width">
+              <table>
+                <tr>
+                  <td></td>
+                  <td align="left">Baujahr bis 1977</td>
+                  <td align="left">Baujahr ab 1977</td>
+                  <td align="left">Neubau</td>
+                </tr>
+                <tr>
+                  <td align="left">Bis zu 4 Wohneinheiten</td>
+                  <td align="left">Bedarfsausweis</td>
+                  <td align="left">freie Wahl</td>
+                  <td align="left">Bedarfsausweis</td>
+                </tr>
+                <tr>
+                  <td align="left">Ab 5 Wohneinheiten</td>
+                  <td align="left">freie Wahl</td>
+                  <td align="left">freie Wahl</td>
+                  <td align="left">Bedarfsausweis</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div className="new-two-box-content-alignment">
+            <div className="col-grid">
+              <div className="col-grid-items">
+                <div className="icon-center-alignment">
+                  <img src={VerbrauchsausweisIcon} alt="VerbrauchsausweisIcon"/>
+                </div>
+                <h6>Verbrauchsausweis für 59,95 €</h6>
+                <h5>Verbrauchsausweis </h5>
+                <div className="line"></div>
+                <p>
+                  Alle Angaben, die Sie für den verbrauchsorientierten Energieausweis benötigen, haben wir für Sie 
+                  zusammengestellt. Alles parat? Dann starten Sie gleich mit der Erstellung.
+                </p>
+                <div className="two-button-style">
+                  <button>PDF mit den Angaben</button>
+                  <button>Jetzt Verbrauchsausweis bestellen</button>
+                </div>
+              </div>
+              <div className="col-grid-items">
+                <div className="icon-center-alignment">
+                  <img src={VerbrauchsausweisIcon} alt="VerbrauchsausweisIcon"/>
+                </div>
+                <h6>Bedarfsausweis für 109,95 €</h6>
+                <h5>Bedarfsausweis </h5>
+                <div className="line"></div>
+                <p>
+                Alle Angaben, die Sie für den bedarfsorientierten Energieausweis benötigen, haben wir für Sie zusammengestellt. Alles parat? Dann starten Sie gleich mit der Erstellung.
+                </p>
+                <div className="two-button-style">
+                  <button>PDF mit den Angaben</button>
+                  <button>Jetzt Verbrauchsausweis bestellen</button>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="qa-all-details-content-alignment">
             <div className="first-title">

@@ -32,7 +32,7 @@ export default function Header() {
                   <NavLink to="/">
                     <li>Home</li>
                   </NavLink>
-                  <NavLink to="/angebote-details">
+                  <NavLink to="/referenzen">
                     <li>Referenzen</li>
                   </NavLink>
                   <NavLink to="/properties-page">
@@ -79,7 +79,7 @@ export default function Header() {
             <NavLink to="/" onClick={() => setHeaderOpen(false)}>
               <li>Home</li>
             </NavLink>
-            <NavLink to="/angebote-details" onClick={() => setHeaderOpen(false)}>
+            <NavLink to="/referenzen" onClick={() => setHeaderOpen(false)}>
                 <li>Referenzen</li>
               </NavLink>
             <NavLink to="/properties-page" onClick={() => setHeaderOpen(false)}>

@@ -244,6 +244,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    .image-center-alignment {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    span {
+      display: block;
+      font-size: 20px;
+      line-height: 30px;
+      color: #fff;
+      padding: 25px 0 0 0;
+      text-align: center;
+
+      @include breakpoint("max-sm") {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 20px 0 0 0;
+      }
+    }
+
     img {
       max-width: 200px;
       animation: taadaa 2s infinite;

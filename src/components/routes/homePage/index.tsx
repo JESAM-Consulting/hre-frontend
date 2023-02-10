@@ -24,7 +24,7 @@ export default function HomePage() {
         initial={{ x: "100vh" }}
         animate={{ x: "0" }}
         transition={{
-          duration: 1.3,
+          duration: 2.5,
         }}
       >
         <HeroSection />

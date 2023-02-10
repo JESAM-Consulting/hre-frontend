@@ -10,6 +10,7 @@ import HRE_WHITE from "../../../../assets/logo/HRE_WHITE.svg";
 import ImageGallery from "react-image-gallery";
 
 function SampleNextArrow(props: any) {
+  
   const { className, style, onClick } = props;
   return (
     <div className="right-slider-icon-alignment" onClick={onClick}>
@@ -32,7 +33,7 @@ export default function PropertiesCard() {
   const [mapdata, setMapData] = useState<any>([]);
   const [slidersImg, setSlidersImg] = useState<any>([]);
   const [sliderModalOpen, setSliderModalOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(false)
 
   const propImage: any = [];
 
@@ -578,7 +579,12 @@ export default function PropertiesCard() {
       {isLoading &&
         <div>
           <div className="loader-wrapper-page">
-            <img src={HRE_WHITE} alt="HRE_WHITE" />
+            <div>
+              <div className="image-center-alignment">
+              <img src={HRE_WHITE} alt="HRE_WHITE" />
+              </div>
+              <span>Ihre Angebote werden geladen ...</span>
+            </div>
           </div>
         </div>
       }
