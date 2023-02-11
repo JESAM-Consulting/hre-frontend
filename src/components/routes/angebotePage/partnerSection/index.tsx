@@ -27,9 +27,9 @@ export default function PartnerSection() {
                   className="animate__slideInUp animate__animated wow"
                   data-wow-offset="100"
                 >
-                  Geschäftsführer
+                  Bachelor B.A.
                 </h6>
-              
+
                 <div className="all-text-alignment-grid">
                   <a href="tel: 0151 16 6289">
                     <div className="text-alignment">
@@ -77,15 +77,15 @@ export default function PartnerSection() {
                   className="animate__slideInUp animate__animated wow"
                   data-wow-offset="100"
                 >
-                Torben Plate
+                  Torben Plate
                 </h5>
                 <h6
                   className="animate__slideInUp animate__animated wow"
                   data-wow-offset="100"
                 >
-                 Immobilienmakler (IHK)
+                  Immobilienmakler (IHK)
                 </h6>
-              
+
                 <div className="all-text-alignment-grid">
                   <a href="tel: 0170 66 87 847">
                     <div className="text-alignment">
@@ -133,15 +133,15 @@ export default function PartnerSection() {
                   className="animate__slideInUp animate__animated wow"
                   data-wow-offset="100"
                 >
-               Kirstin Leuning
+                  Kirstin Leuning
                 </h5>
                 <h6
                   className="animate__slideInUp animate__animated wow"
                   data-wow-offset="100"
                 >
-               Assistenz
+                  Assistenz
                 </h6>
-              
+
                 <div className="all-text-alignment-grid">
                   <a href="tel: +49 1726 278167">
                     <div className="text-alignment">
@@ -189,15 +189,15 @@ export default function PartnerSection() {
                   className="animate__slideInUp animate__animated wow"
                   data-wow-offset="100"
                 >
-             Daniela Czehowsky
+                  Daniela Czehowsky
                 </h5>
                 <h6
                   className="animate__slideInUp animate__animated wow"
                   data-wow-offset="100"
                 >
-          Immobilienmaklerin
+                  Immobilienmaklerin
                 </h6>
-              
+
                 <div className="all-text-alignment-grid">
                   <a href="tel: +49 1726 278167">
                     <div className="text-alignment">
@@ -211,7 +211,7 @@ export default function PartnerSection() {
                         className="animate__slideInUp animate__animated wow"
                         data-wow-offset="100"
                       >
-                        <span>   0170 7416710</span>
+                        <span> 0170 7416710</span>
                       </div>
                     </div>
                   </a>
@@ -235,7 +235,6 @@ export default function PartnerSection() {
               </div>
             </div>
           </div>
-         
         </div>
       </div>
       <div className="partner-all-content-section-alignment">
