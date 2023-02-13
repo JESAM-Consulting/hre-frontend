@@ -2,9 +2,10 @@
 
 .expretise-section-all-content-alignment {
     padding-left: max(80px, calc((100vw - 1221px) / 2));
-
+    margin: 5px 0 0 0;
     @include breakpoint("max-md") {
         padding-left: 40px;
+        margin: 2px 0 0 0;
     }
 
     @include breakpoint("max-sm") {
