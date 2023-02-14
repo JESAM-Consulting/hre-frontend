@@ -88,11 +88,13 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="tow-new-s-alignment">
-          <div className="bottom-banner-image-dummy-align-one">
-            <div className="hero-light-box">
-              <img src={AssetsImage} alt="AssetsImage" />
+          <a href="https://www.hre-immobilien.de/kontakt/#werden" target="_blank">
+            <div className="bottom-banner-image-dummy-align-one">
+              <div className="hero-light-box">
+                <img src={AssetsImage} alt="AssetsImage" />
+              </div>
             </div>
-          </div>
+          </a>
           <div className="bottom-banner-image-dummy-align">
             <div className="image-wrapper-alignment">
               <div className="logo-center-alignment">

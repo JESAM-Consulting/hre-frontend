@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Map from "../kontakt/map";
 import "./kontakt.scss";
-import MapImage from "../../../assets/images/map.png";
 export default function Kontakt() {
   useEffect(() => {
     window.scrollTo({
@@ -50,18 +49,18 @@ export default function Kontakt() {
           </div>
         </div>
       </div>
-      <div className="contact-banner-new-phase">
-        <div className="container-md-4">
+      <div className="container-md-4">
+        <div className="contact-banner-new-phase" id="werden">
           <div className="grid">
             <div className="grid-items"></div>
             <div className="grid-items">
               <h4>Werden Sie Tippgeber</h4>
               <p>
-                Werden Sie Tippgeber und erhalten Sie für jeden hergestellten Kontakt 
-                Geld, der zu einer erfolgreichen Vermittlung durch uns führt! 
+                Werden Sie Tippgeber und erhalten Sie für jeden hergestellten Kontakt
+                Geld, der zu einer erfolgreichen Vermittlung durch uns führt!
               </p>
               <span>
-                Beispiel: Verkaufspreis einer Immobilie für 500.000,- 
+                Beispiel: Verkaufspreis einer Immobilie für 500.000,-
                 € bedeutet für Sie 3.000,- €!
               </span>
             </div>
