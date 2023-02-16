@@ -38,6 +38,9 @@ export default function Header() {
                   <NavLink to="/angebote-page">
                     <li>Über Uns</li>
                   </NavLink>
+                  <NavLink to="/energieausweis">
+                    <li>Energieausweis</li>
+                  </NavLink>
                   <NavLink to="/referenzen">
                     <li>Referenzen</li>
                   </NavLink>

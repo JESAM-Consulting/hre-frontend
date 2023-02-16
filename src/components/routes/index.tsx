@@ -15,6 +15,7 @@ import Datenschutz from "./datenschutz";
 import ScrollUp from "../scrollUp";
 import Referenzen from "./Referenzen";
 import AngeboteDetails from "./AngeboteDetails";
+import Energieausweis from "./Energieausweis";
 
 const DefaultLayoutLoader = ({ children, match }: any) => {
   const [loaderStart, setLoaderStart] = useState(false);
@@ -123,6 +124,12 @@ export default function Routes() {
             exact={true}
             path="/referenzen"
             component={Referenzen}
+            layout={DefaultLayout}
+          />
+           <RouteWrapper
+            exact={true}
+            path="/energieausweis"
+            component={Energieausweis}
             layout={DefaultLayout}
           />
           <RouteWrapper
