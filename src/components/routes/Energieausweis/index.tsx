@@ -148,6 +148,113 @@ export default function Energieausweis() {
                     </tbody>
                   </table>
                 </div>
+
+                <div className="mobile-enine-table-alignment">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>
+                          <div className="img-alignment">
+                            <img src={EneHome1} alt="EneHome1" />
+                          </div>
+                        </th>
+                        <th>
+                          <div className="img-alignment">
+                            <img src={EneHome2} alt="EneHome2" />
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <img src={Ene1} alt="Ene1" />
+                        </td>
+                        <td>
+                          <div className="first-details-alignment">
+                            <h6>Energieausweis</h6>
+                            <p>
+                              für Gebäude, die die Wärmeschutzverordnung von 01.
+                              November 1977 einhalten
+                            </p>
+                          </div>
+                        </td>
+                        <td>
+                          <div className="first-details-alignment">
+                            <h6>Bedarfsausweis</h6>
+                            <p>
+                              für Gebäude, die die Wärmeschutzverordnung von 01.
+                              November 1977 nicht einhalten
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src={Ene2} alt="Ene2" />
+                        </td>
+                        <td>
+                          <p>
+                            {" "}
+                            orientiert sich am Verbrauch der vergangenen drei
+                            Jahre
+                          </p>
+                        </td>
+                        <td>
+                          <p>
+                            {" "}
+                            orientiert sich am Verbrauch der vergangenen drei
+                            Jahre
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src={Ene3} alt="Ene3" />
+                        </td>
+                        <td>
+                          <p>erstellt von Versorgern oder Messanbietern</p>
+                        </td>
+                        <td>
+                          <p>
+                            erstellt von Architekten, Ingenieure, Heizungsbauer
+                            und Schornsteinfeger
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src={Ene4} alt="Ene4" />
+                        </td>
+                        <td colSpan={2}>
+                          <div className="first-details-alignment">
+                            <h6>Ausnahmen:</h6>
+                            <p>
+                              Gebäude mit Nutzfläche von maximal 50 m2,
+                              Denkmalschutz und Abrisshäuser
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src={Ene5} alt="Ene5" />
+                        </td>
+                        <td colSpan={2}>
+                          <div className="first-details-alignment">
+                            <h6>Achtung Strafe!</h6>
+                            <p>
+                              Sie wollen vermieten oder verkaufen? Dann brauchen
+                              Sie einen Energieausweis. Wer keinen vorweisen
+                              kann, riskiert ein Bußgeld von bis zu 10.000 €
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
@@ -214,9 +321,39 @@ export default function Energieausweis() {
                     </tbody>
                   </table>
                 </div>
+
+              
               </div>
             </div>
           </div>
+          <div className="mobile-bedarfsausweis-chart-alignment">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Bis zu 4 Wohneinheiten</th>
+                        <th>Ab 5 Wohneinheiten</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Baujahr bis 1977</td>
+                        <td>Baujahr ab 1977</td>
+                        <td>Neubau</td>
+                      </tr>
+                      <tr>
+                        <td>Bedarfsausweis</td>
+                        <td>freie Wahl</td>
+                        <td>Bedarfsausweis</td>
+                      </tr>
+                      <tr>
+                        <td>freie Wahl</td>
+                        <td>freie Wahl</td>
+                        <td>Bedarfsausweis</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
         </div>
 
         <div className="verbrauchsausweis-bedarfsausweis-section">
@@ -279,7 +416,7 @@ export default function Energieausweis() {
           </div>
         </div>
 
-        <div className="qA-section">
+        {/* <div className="qA-section">
           <div className="container-lg">
             <div className="qA-heading-text">
               <h4>Q&A</h4>
@@ -352,7 +489,7 @@ export default function Energieausweis() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

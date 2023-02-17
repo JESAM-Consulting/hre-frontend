@@ -19,12 +19,8 @@
     bottom: 41px;
 
     @include breakpoint("max-sm") {
-      position: absolute;
-      left: 50%;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      transform: translateX(-50%);
+      left: 30px;
+      bottom: 38px;
     }
 
     img {
@@ -41,9 +37,12 @@
   padding: 127px 0 124px 0;
 
   @include breakpoint("max-sm") {
-   padding: 80px 0;
+    padding: 61px 0 80px 0;
   }
   .heading-text {
+    @include breakpoint("max-sm") {
+      max-width: 303px;
+    }
     h1 {
       @include heading-1;
       color: #2a2a2a;
@@ -124,8 +123,8 @@
     padding: 89px 0 112px 0;
 
     @include breakpoint("max-md") {
-      padding: 80px 0;
-      }
+      padding: 75px 0;
+    }
 
     .energieausweis-einen-details-alignment {
       .enine-heading-text {
@@ -135,11 +134,18 @@
           @include breakpoint("max-md") {
             @include heading-md;
           }
+          @include breakpoint("max-sm") {
+            @include heading-4-normal;
+          }
         }
       }
 
       .enine-table-alignment {
         padding: 72px 0 0 0;
+
+        @include breakpoint("max-sm") {
+          display: none;
+        }
         table {
           width: 100%;
           thead {
@@ -204,12 +210,22 @@
                     @include text-medium;
                     line-height: 142.2%;
                     color: #979ca0;
+
+                    @include breakpoint("max-md") {
+                      @include text-12-medium;
+                      line-height: 142.2%;
+                    }
                   }
                   p {
                     padding: 7px 0 0 0;
                     @include text-12-medium;
                     line-height: 142.2%;
                     color: #979ca0;
+
+                    @include breakpoint("max-md") {
+                      @include mobile-8;
+                      line-height: 142.2%;
+                    }
                   }
                 }
 
@@ -217,10 +233,131 @@
                   @include text-12-medium;
                   line-height: 142.2%;
                   color: #979ca0;
+                  @include breakpoint("max-md") {
+                    @include mobile-8;
+                    line-height: 142.2%;
+                  }
                 }
               }
             }
           }
+        }
+      }
+
+      .mobile-enine-table-alignment {
+        display: none;
+        @include breakpoint("max-sm") {
+          display: block;
+          padding: 19px 0 0 0;
+        }
+
+        table {
+          width: 100%;
+          thead {
+            tr {
+              border-bottom: 1px solid #d2d2d2;
+              th {
+                border-right: 1px solid #d2d2d2;
+                &:nth-child(2) {
+                  padding: 0 0 10px 34px;
+                }
+                &:nth-child(3) {
+                  padding: 0 0 10px 13px;
+                }
+                &:last-child {
+                  border-right: none;
+                }
+                .img-alignment {
+                  img {
+                    width: 33px !important;
+                    height: 30px;
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+
+          tbody {
+            tr {
+              border-bottom: 1px solid #d2d2d2;
+              &:last-child {
+                border-bottom: none;
+              }
+              &:nth-child(2) {
+                td {
+                  padding: 21px 14px 6px 14px;
+                }
+              }
+
+              &:nth-child(3) {
+                td {
+                  padding: 25px 10px 20px 14px;
+                }
+              }
+
+              &:nth-child(4) {
+                border-bottom: none;
+                td {
+                  padding: 23px 6px 10px 14px;
+                  .first-details-alignment {
+                    max-width: 100%;
+                  }
+                }
+              }
+              &:nth-child(5) {
+                border-bottom: none;
+                td {
+                  padding: 23px 6px 10px 14px;
+                  .first-details-alignment {
+                    max-width: 100%;
+                  }
+                }
+              }
+
+              td {
+                padding: 33px 6px 20px 14px;
+                border-right: 1px solid #d2d2d2;
+
+                &:first-child {
+                  padding: 0 30px 0 0;
+                }
+                p {
+                  @include mobile-8;
+                  line-height: 142.2%;
+                  color: #979ca0;
+                }
+                &:last-child {
+                  border-right: none;
+                }
+
+                .first-details-alignment {
+                  max-width: 106px;
+                  h6 {
+                    @include text-12-medium;
+                    line-height: 142.2%;
+                    color: #979ca0;
+                  }
+                  p {
+                    padding: 7px 0 0 0;
+                    @include mobile-8;
+                    line-height: 142.2%;
+                    color: #979ca0;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        table thead tr th:nth-child(1) {
+          width: 20%;
+        }
+        table thead tr th:nth-child(2) {
+          width: 40%;
+        }
+        table thead tr th:nth-child(3) {
+          width: 40%;
         }
       }
     }
@@ -230,16 +367,32 @@
 .warum-sollte-section {
   padding: 124px 0 0 0;
 
+  @include breakpoint("max-sm") {
+    padding: 80px 0 0 0;
+  }
+
   .warum-sollte-details-alignment {
     h4 {
       @include heading-1;
       color: #2a2a2a;
       padding: 20px 0 0 0;
+      @include breakpoint("max-md") {
+        @include heading-md;
+      }
+      @include breakpoint("max-sm") {
+        @include heading-4-normal;
+        line-height: 120.4%;
+      }
     }
     p {
       padding: 20px 0 0 0;
       @include heading-4-normal;
       color: #000000;
+
+      @include breakpoint("max-sm") {
+        @include text-sm;
+        line-height: 16px;
+      }
     }
 
     .warum-sollte-list-alignment {
@@ -252,6 +405,11 @@
           @include heading-4-normal;
           line-height: 30px;
           color: #2a2a2a;
+
+          @include breakpoint("max-sm") {
+            @include text-sm;
+            line-height: 30px;
+          }
         }
       }
     }
@@ -259,31 +417,54 @@
 
   .bedarfsausweis-section {
     padding: 37px 5px 0 5px;
+    @include breakpoint("max-md") {
+      padding: 50px 0 0 0;
+    }
     .bedarfsausweis-heading-text {
       h4 {
         @include heading-36;
         color: #2a2a2a;
+
+        @include breakpoint("max-md") {
+          @include text-16-normal;
+
+          line-height: 144.4%;
+        }
       }
 
       .bedarfsausweis-chart-alignment {
         padding: 40px 0 0 0;
+        @include breakpoint("max-sm") {
+          display: none;
+        }
         table {
           max-width: 916px;
           width: 916px;
+
+          @include breakpoint("max-md") {
+            max-width: 100%;
+            width: 100%;
+          }
           thead {
             tr {
               border-bottom: 1px solid #7f7f7f;
+
               th {
                 @include heading-4-normal;
                 color: #000000;
                 padding: 0 0 23px 0;
+                @include breakpoint("max-md") {
+                  @include mobile-10-normal;
+                }
               }
             }
           }
           tbody {
             tr {
               border-bottom: 1px solid #7f7f7f;
-
+              @include breakpoint("max-md") {
+                border-bottom: none;
+              }
               &:last-child {
                 border-bottom: none;
               }
@@ -291,6 +472,56 @@
                 padding: 23px 0;
                 @include heading-4-normal;
                 color: #000000;
+                @include breakpoint("max-md") {
+                  @include mobile-10-normal;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-bedarfsausweis-chart-alignment {
+    display: none;
+    @include breakpoint("max-sm") {
+      display: block;
+      padding: 20px 13px 0 13px;
+      table {
+        width: 100%;
+
+        thead {
+          tr {
+            th {
+              @include mobile-10-normal;
+              color: #000000;
+              padding: 0 13px 24px 13px;
+              border-right: 1px solid #7f7f7f;
+              &:first-child {
+                padding: 0 13px 24px 0;
+              }
+              &:last-child {
+                padding: 0 0 24px 13px;
+                border-right: none;
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              @include mobile-10-normal;
+              color: #000000;
+              padding: 0 13px 22px 13px;
+              border-right: 1px solid #7f7f7f;
+              &:first-child {
+                padding: 0 13px 24px 0;
+              }
+              &:last-child {
+                padding: 0 0 24px 13px;
+                border-right: none;
               }
             }
           }
@@ -301,16 +532,29 @@
 }
 
 .verbrauchsausweis-bedarfsausweis-section {
-  padding: 80px 0 0 0;
+  padding: 80px 0 148px 0;
+  @include breakpoint("max-sm") {
+    padding: 80px 0 73px 0;
+  }
   .verbrauchsausweis-grid-alignment {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
 
+    @include breakpoint("max-sm") {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
     .verbrauchsausweis-gridItem-box-alignment {
       background: #fdfdfd;
       border: 1px solid #7f7f7f;
       padding: 54px 58px;
+
+      @include breakpoint("max-md") {
+        padding: 30px;
+      }
 
       .main-section-alignment {
         h4 {
@@ -318,11 +562,19 @@
           @include heading-md;
           line-height: 40px;
           color: #000000;
+
+          @include breakpoint("max-md") {
+            @include heading-4-normal;
+            line-height: 40px;
+          }
         }
       }
 
       .child-details-alignment {
         padding: 30px 0 0 0;
+        @include breakpoint("max-md") {
+          padding: 20px 0 0 0;
+        }
         h6 {
           @include text-16-normal;
           position: relative;
@@ -335,6 +587,9 @@
             background-color: #2a2a2a;
             content: "";
             left: 0;
+            @include breakpoint("max-md") {
+              bottom: -8px;
+            }
           }
         }
 
@@ -343,40 +598,64 @@
           @include heading-4-normal;
           color: #000000;
           line-height: 30px;
+
+          @include breakpoint("max-md") {
+            padding: 18px 0 0 0;
+            @include mobile-12;
+            line-height: 20px;
+          }
         }
       }
 
       .options-button-alignment {
         padding: 30px 0 0 0;
-
+        max-width: 291px;
+        width: 291px;
+        @include breakpoint("max-md") {
+          max-width: 250px;
+          padding: 20px 0 0 0;
+        }
         .pdf-button-alignment {
           button {
             border: 2px solid #474f5d;
             border-radius: 5px;
-            max-width: 291px;
-            width: 291px;
+            width: 100%;
             padding: 15px 63px;
             @include mobile-14-bolder;
             white-space: nowrap;
             cursor: pointer;
             color: #474f5d;
+            @include breakpoint("max-md") {
+              height: 44px;
+              padding: 0;
+              @include mobile-12-bolder;
+            }
           }
         }
 
         .other-button-alignment {
           padding: 12px 0 0 0;
+          max-width: 291px;
+          width: 291px;
+          @include breakpoint("max-md") {
+            max-width: 250px;
+          }
           button {
             background: #7f7f7f;
             border: 2px solid #7f7f7f;
             border-radius: 5px;
-            max-width: 291px;
-            width: 291px;
+            width: 100%;
             padding: 15px 0;
             @include mobile-14-bolder;
             white-space: nowrap;
             text-align: center;
             cursor: pointer;
             color: #ffffff;
+            @include breakpoint("max-md") {
+              @include mobile-12-bolder;
+              height: 44px;
+              padding: 0;
+            }
           }
         }
       }
