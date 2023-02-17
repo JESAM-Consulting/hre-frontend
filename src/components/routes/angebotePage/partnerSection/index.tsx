@@ -43,7 +43,7 @@ export default function PartnerSection() {
                         className="animate__slideInUp animate__animated wow"
                         data-wow-offset="100"
                       >
-                        <span>0151 16 6289</span>
+                        <span>+49 0151 16 6289</span>
                       </div>
                     </div>
                   </a>
@@ -99,7 +99,7 @@ export default function PartnerSection() {
                         className="animate__slideInUp animate__animated wow"
                         data-wow-offset="100"
                       >
-                        <span>0170 66 87 847</span>
+                        <span>+49 0170 66 87 847</span>
                       </div>
                     </div>
                   </a>
@@ -155,7 +155,7 @@ export default function PartnerSection() {
                         className="animate__slideInUp animate__animated wow"
                         data-wow-offset="100"
                       >
-                        <span> +49 1726 278167</span>
+                        <span>+49 0170 7416710</span>
                       </div>
                     </div>
                   </a>
@@ -211,7 +211,7 @@ export default function PartnerSection() {
                         className="animate__slideInUp animate__animated wow"
                         data-wow-offset="100"
                       >
-                        <span> 0170 7416710</span>
+                        <span> +49 1726 278167</span>
                       </div>
                     </div>
                   </a>
