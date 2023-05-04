@@ -92,6 +92,7 @@ export default function PartnerSection() {
                       <div
                         className="animate__slideInUp animate__animated wow"
                         data-wow-offset="100"
+                        
                       >
                         <p>Telefon :</p>
                       </div>
