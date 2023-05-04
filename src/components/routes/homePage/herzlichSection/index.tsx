@@ -1,6 +1,6 @@
 import React from "react";
 import "./herzlichSection.scss";
-import HerzlichImage from "../../../../assets/images/herzlich-new2.png";
+import HerzlichImage from "../../../../assets/images/herzlich-new2.webp";
 import CapaImage from "../../../../assets/images/capa.svg";
 import { NavLink } from "react-router-dom";
 import HRELogo from "../../../../assets/logo/HRE_WHITE.svg";
