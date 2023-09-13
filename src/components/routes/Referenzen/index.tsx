@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "./Referenzen.scss";
 import HreLgImage from "../../../assets/images/hre-lg.png";
-import HreLgImageSmall from "../../../assets/images/small-hre.png";
-import Image1 from "../../../assets/images/r1.png";
-import Image2 from "../../../assets/images/r2.png";
-import Image3 from "../../../assets/images/r3.png";
-import Image4 from "../../../assets/images/r4.png";
-import Image5 from "../../../assets/images/r5.png";
-import Image6 from "../../../assets/images/r6.png";
-import Image7 from "../../../assets/images/r7.png";
-import Image8 from "../../../assets/images/r8.png";
-import Image9 from "../../../assets/images/r9.png";
-import Image10 from "../../../assets/images/r10.png";
+import HreLgImageSmall from "../../../assets/images/small-hre-min.png";
+import Image1 from "../../../assets/images/r1-min.png";
+import Image2 from "../../../assets/images/r2-min.png";
+import Image3 from "../../../assets/images/r3-min.png";
+import Image4 from "../../../assets/images/r4-min.png";
+import Image5 from "../../../assets/images/r5-min.png";
+import Image6 from "../../../assets/images/r6-min.png";
+import Image7 from "../../../assets/images/r7-min.png";
+import Image8 from "../../../assets/images/r8-min.png";
+import Image9 from "../../../assets/images/r9-min.png";
+import Image10 from "../../../assets/images/r10-min.png";
 import { NavLink } from "react-router-dom";
 import HRE_WHITE from "../../../assets/logo/HRE_WHITE.svg";
 
