@@ -63,6 +63,9 @@
     }
 }
 
+.debug-image {
+    animation: none !important;
+}
 .next-button-align-slider {
     position: absolute;
     top: 50%;
@@ -222,7 +225,7 @@
         }
 
         img {
-            animation: moveInleft 3s linear infinite;
+            // animation: moveInleft 3s linear infinite;
             @include breakpoint("max-sm") {
                 max-width: 20px;
             }
