@@ -73,7 +73,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  padding: 135px 0;
+  padding: 75px 0;
   background-position: center center;
 
   @include breakpoint("max-sm") {
@@ -98,10 +98,10 @@
     }
     .grid-items {
       p {
-        margin: 40px 0 20px 0;
+        margin: 40px 0 40px 0;
         font-weight: 400;
         font-size: 20px;
-        line-height: 23px;
+        line-height: 25px;
         color: #ffffff;
 
         @include breakpoint("max-sm") {
@@ -115,13 +115,13 @@
       span {
         display: block;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 23px;
+        font-size: 16px;
+        line-height: 25px;
         color: #ffffff;
 
         @include breakpoint("max-sm") {
           font-weight: 400;
-          font-size: 12px;
+          font-size: 11px;
           line-height: 20px;
         }
       }

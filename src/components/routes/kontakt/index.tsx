@@ -56,11 +56,33 @@ export default function Kontakt() {
               <h4>Werden Sie Tippgeber</h4>
               <p>
                 Werden Sie Tippgeber und erhalten Sie für jeden hergestellten Kontakt
-                Geld, der zu einer erfolgreichen Vermittlung durch uns führt!
+                Geld, der zu einer erfolgreichen Vermittlung durch uns führt!<br/>
+                Beispiel: Verkaufspreis einer Immobilie für 500.000,-
+                € bedeutet für Sie 3.000,- €!<br/>
+                -       Anschrift der zu verkaufenden / vermietenden Immobilie<br/>
+                -       Anschrift des Eigentümers der Immobilie<br/>
+-       Ihren eigenen Namen und Ihre Anschrift Sie helfen uns, wenn Sie uns möglichst umfassend informieren.<br/>
+-       Sobald Sie uns einen Brief oder eine E-Mail mit Ihrer Empfehlung schreiben, erhalten Sie von uns eine schriftliche Bestätigung.<br/>
+-       Natürlich können Sie uns auch jederzeit telefonisch Ihre Tipp-Empfehlung mitteilen.<br/>
+-       Vorab prüfen wir, ob uns das Objekt noch nicht bekannt ist und nehmen anschließend Kontakt mit dem benannten Eigentümer auf. 
+Die Eigentümer müssen informiert worden sein und Ihnen gegenüber unserer Kontaktaufnahme zugestimmt haben<br/>
+-       Erteilt uns der Eigentümer einen Auftrag zur Vermarktung seines Objektes, informieren wir Sie umgehend und beginnen unverzüglich mit unserer Arbeit.<br/>
+-       Die Immobilie wird durch unsere Maklertätigkeit mit einem rechtswirksamen und notariellen Kaufvertrag provisionspflichtig verkauft.<br/>
+-       Der Käufer und/oder Verkäufer zahlt seine Provision an uns.<br/>
+-       Wir sind am Ziel und Sie dürfen sich über Ihre üppige TIPP-Provision freuen.<br/>
+-       Sie erhalten 15% der gesamten an uns gezahlten Nettoprovision* (ohne MwSt.)<br/>
               </p>
               <span>
-                Beispiel: Verkaufspreis einer Immobilie für 500.000,-
-                € bedeutet für Sie 3.000,- €!
+              
+                *Voraussetzungen: Die benannte Immobilie darf uns noch nicht bekannt sein und wird von uns nach dem erteilten Maklerauftrag
+                 des Eigentümers erfolgreich provisionspflichtig verkauft. Die Tippgeberprovision ist verdient und fällig mit Abschluss 
+                 des rechtswirksamen notariellen Kaufvertrages und nach Eingang der Vermittlungs-/Nachweisprovision des Käufers und/oder 
+                 Verkäufers bei uns. Der Empfehlungsgeber muss volljährig sein. Wir behalten uns das Recht vor, die Vermarktung von benannten 
+                 Immobilien jederzeit ohne Angaben von Gründen abzulehnen oder zu beenden. Der Rechtsweg ist ausgeschlossen.<br/>
+                **Beispielrechnung auf Basis der ortsüblichen Maklerprovision in Bremen von 6% (netto) des notariellen Kaufpreises. 
+                Der Provisionssatz kann abweichen und ist nicht garantiert. Die Höhe richtet sich allein nach dem von uns mit dem 
+                Immobilienkäufer und/oder -verkäufer vereinbarten Provisionssatz.
+
               </span>
             </div>
           </div>
