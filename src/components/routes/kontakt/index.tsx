@@ -58,20 +58,22 @@ export default function Kontakt() {
                 Werden Sie Tippgeber und erhalten Sie für jeden hergestellten Kontakt
                 Geld, der zu einer erfolgreichen Vermittlung durch uns führt!<br/>
                 Beispiel: Verkaufspreis einer Immobilie für 500.000,-
-                € bedeutet für Sie 3.000,- €!<br/>
-                -       Anschrift der zu verkaufenden / vermietenden Immobilie<br/>
-                -       Anschrift des Eigentümers der Immobilie<br/>
--       Ihren eigenen Namen und Ihre Anschrift Sie helfen uns, wenn Sie uns möglichst umfassend informieren.<br/>
--       Sobald Sie uns einen Brief oder eine E-Mail mit Ihrer Empfehlung schreiben, erhalten Sie von uns eine schriftliche Bestätigung.<br/>
--       Natürlich können Sie uns auch jederzeit telefonisch Ihre Tipp-Empfehlung mitteilen.<br/>
--       Vorab prüfen wir, ob uns das Objekt noch nicht bekannt ist und nehmen anschließend Kontakt mit dem benannten Eigentümer auf. 
-Die Eigentümer müssen informiert worden sein und Ihnen gegenüber unserer Kontaktaufnahme zugestimmt haben<br/>
--       Erteilt uns der Eigentümer einen Auftrag zur Vermarktung seines Objektes, informieren wir Sie umgehend und beginnen unverzüglich mit unserer Arbeit.<br/>
--       Die Immobilie wird durch unsere Maklertätigkeit mit einem rechtswirksamen und notariellen Kaufvertrag provisionspflichtig verkauft.<br/>
--       Der Käufer und/oder Verkäufer zahlt seine Provision an uns.<br/>
--       Wir sind am Ziel und Sie dürfen sich über Ihre üppige TIPP-Provision freuen.<br/>
--       Sie erhalten 15% der gesamten an uns gezahlten Nettoprovision* (ohne MwSt.)<br/>
-              </p>
+                € bedeutet für Sie 3.000,- €!<br/><br/></p>
+                <h6>Folgende Informationen benötigen wir:  </h6>
+                <ul>
+                     <li>  Anschrift der zu verkaufenden / vermietenden Immobilie</li> 
+                    <li>    Anschrift des Eigentümers der Immobilie</li>
+                   <li>  Ihren eigenen Namen und Ihre Anschrift Sie helfen uns, wenn Sie uns möglichst umfassend informieren.</li>
+                      <li>Sobald Sie uns einen Brief oder eine E-Mail mit Ihrer Empfehlung schreiben, erhalten Sie von uns  eine schriftlicheBestätigung.</li> 
+                    <li>   Natürlich können Sie uns auch jederzeit telefonisch Ihre Tipp-Empfehlung mitteilen.</li> 
+                    <li>   Vorab prüfen wir, ob uns das Objekt noch nicht bekannt ist und nehmen anschließend Kontakt mit dem benannten Eigentümer auf.
+                        Die Eigentümer müssen informiert worden sein und Ihnen gegenüber unserer Kontaktaufnahme zugestimmt haben</li> 
+                     <li>  Erteilt uns der Eigentümer einen Auftrag zur Vermarktung seines Objektes, informieren wir Sie umgehend und beginnen unverzüglich mit unserer Arbeit.</li> 
+                   <li>    Die Immobilie wird durch unsere Maklertätigkeit mit einem rechtswirksamen und notariellen Kaufvertrag provisionspflichtig verkauft.</li> 
+                 <li>  Der Käufer und/oder Verkäufer zahlt seine Provision an uns.</li>   
+                   <li>   Wir sind am Ziel und Sie dürfen sich über Ihre üppige TIPP-Provision freuen.</li>
+                   <li>  Sie erhalten 15% der gesamten an uns gezahlten Nettoprovision* (ohne MwSt.)</li> <br/> 
+                </ul>
               <span>
               
                 *Voraussetzungen: Die benannte Immobilie darf uns noch nicht bekannt sein und wird von uns nach dem erteilten Maklerauftrag
