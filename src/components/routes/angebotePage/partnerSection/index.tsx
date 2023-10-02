@@ -1,11 +1,11 @@
 import React from "react";
 import "./partnerSection.scss";
 import ParnterImage from "../../../../assets/images/partner-image.png";
-import ParnterImage1 from "../../../../assets/images/partner-image1.png";
+import ParnterImage1 from "../../../../assets/images/rioni.jpg";
 import ParnterImage02 from "../../../../assets/images/0002.png";
 import ParnterImage03 from "../../../../assets/images/003.png";
 import ParnterImage04 from "../../../../assets/images/004.png";
-import ParnterImage05 from "../../../../assets/images/005.png";
+import ParnterImage05 from "../../../../assets/images/newpartnerimage.jpeg";
 export default function PartnerSection() {
   return (
     <div>

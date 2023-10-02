@@ -1,8 +1,8 @@
 import React from "react";
 import "./informationSection.scss";
-import CardImage from "../../../../assets/images/card-image.png";
-import CardImage1 from "../../../../assets/images/card-image1.png";
-import CardImage2 from "../../../../assets/images/card-image2.png";
+import CardImage from "../../../../assets/images/card-image 5.svg";
+import CardImage1 from "../../../../assets/images/card-image1.svg";
+import CardImage2 from "../../../../assets/images/card-image2.svg";
 import { NavLink } from "react-router-dom";
 export default function InformationSection() {
   return (

@@ -68,9 +68,7 @@ export default function UserWorkFlow() {
                     </div>
                     <h2>2. Professionelle Fotos</h2>
                     <p>
-                      Für Sie schicken wir unseren <span>Profi-Fotografen</span>{" "}
-                      los, damit Ihre Immobilie im besten Licht präsentiert wird
-                      -selbstverständlich <span>kostenlos!</span>
+                      Für Sie machen wir hochwertige Fotos, damit Ihre Immobilie im besten Licht präsentiert wird - selbstverständlich kostenlos!
                     </p>
                   </div>
                 </div>

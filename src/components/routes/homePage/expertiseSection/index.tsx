@@ -1,6 +1,6 @@
 import React from "react";
 import "./expertiseSection.scss";
-import ExpartImage from "../../../../assets/images/expert-banner2.png";
+import ExpartImage from "../../../../assets/images/expert-banner 3.svg";
 import HRELogo from "../../../../assets/logo/HRE_WHITE.svg";
 
 export default function ExpertiseSection() {
@@ -59,9 +59,7 @@ export default function ExpertiseSection() {
                     className="animate__slideInUp animate__animated wow"
                     data-wow-offset="100"
                   >
-                    Zeigen Sie Ihre Immobilie von der Schokoladen-Seite: Mit
-                    unserem auf Immobilien spezialisierten Profi-Fotografen
-                    rücken wir jede Immobilie garantiert ins rechte Licht.
+                    Für Sie machen wir hochwertige Fotos, damit Ihre Immobilie im besten Licht präsentiert wird - selbstverständlich kostenlos!
                   </p>
                 </div>
               </div>
