@@ -78,12 +78,13 @@
 
   @include breakpoint("max-sm") {
     background-image: url("../../../assets/images/mobile-money.png");
-    padding: 350px 0 82px 0;
+    padding: 350px 0 82px 35px;
+    background-position: inherit;
   }
 
   .grid {
     display: grid;
-    grid-template-columns: 1fr 583px;
+    grid-template-columns: 1fr 1000px;
     gap: 0;
 
     @include breakpoint("max-sm") {

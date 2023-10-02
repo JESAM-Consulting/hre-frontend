@@ -48,7 +48,7 @@ export default function Kontakt() {
           </div>
         </div>
       </div>
-      <div className="container-md-4">
+      <div className="kontak-all-section-content-alignment">
         <div className="contact-banner-new-phase" id="werden">
           <div className="grid">
             <div className="grid-items"></div>
