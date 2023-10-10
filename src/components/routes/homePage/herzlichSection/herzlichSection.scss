@@ -3,6 +3,7 @@
 .herzlich-section-banner {
   background-color: var(--light-background);
   padding: 63px 0;
+  display: none;
 
   @include breakpoint("max-sm") {
     padding: 60px 0;

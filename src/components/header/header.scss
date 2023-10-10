@@ -72,6 +72,9 @@
 
             li:last-child {
                 padding: 0;
+                @include breakpoint("max-md"){
+                    font-size: 10px;
+                }
             }
 
             a:last-child {

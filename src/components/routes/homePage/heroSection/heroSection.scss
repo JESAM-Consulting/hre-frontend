@@ -1,24 +1,138 @@
 @import '../../../../styles/mixins/global.scss';
 
-.hero-section {
 
+.hero-section {
+    overflow: hidden;
+
+    
+      
     position: relative;
 
 
-
+    
     .large-image-style {
+        @include breakpoint("max-sm") {
+            height: 677px;
+        }
+        
         img {
+           overflow: hidden;
             width: 100%;
-            height: calc(100vh - 83px);
+            height: calc(100vh - 50px);
             object-fit: cover;
             object-position: center;
+            opacity: 1;
+            @include breakpoint("max-md") {
+                height: 632px;
+            }
 
             @include breakpoint("max-sm") {
-                height: 220px;
+                height: 677px;
             }
         }
     }
-
+    .centered-text {
+        display: flex;
+    flex-direction: column;
+       gap: 25%;
+        position: absolute;
+        top: 2%;
+        left: 42%;
+        transform: translate(-50%, -50%);
+        font-size: 48px;
+        font-weight: normal;
+        z-index: 1000;
+        color: #535252;
+        font-family: 'Raleway', sans-serif; 
+        // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-align: start;
+        max-width: 45%;
+        height: 10%;
+        margin-top: 5%;  // To ensure the text doesn't overflow the screen width
+        @include breakpoint("max-sm") {
+            
+                margin-top: 127px;
+                position: absolute;
+                font-size: 25px;
+                max-width: 80%;
+                color: #fff;
+                
+          
+        }
+        @media (min-width: 768px) and (max-width: 1024px) {
+            font-size: 24px;  // Adjust the size as needed for tablets
+            max-width: 55%;
+            top: 8%;
+            right: 9%;
+        
+        }
+    }
+    .info-text {
+        font-family: 'Raleway', sans-serif; // Use Raleway font, fall back to sans-serif if not available
+        font-weight: normal;  // Set font weight to bold
+        font-size: 16px;    // Set font size to 16px
+        margin-top: 20px;
+        @include breakpoint("max-md"){
+           font-size: 10px;        
+           width: 103%;
+        }
+        @include breakpoint("max-sm"){
+            display: flex;
+            width: 123%;
+            font-size: 10px;
+        }  // Optional: Add a little spacing on top to separate from the vector image
+    }
+    
+    .picture-style {
+        width: 250px;
+        background-color: rgba(246, 246, 246, 0.5);
+      
+        @include breakpoint("max-md"){
+            width: 152px;
+            height: 27px;
+        }
+        @include breakpoint("max-sm"){
+            display: none;
+        } 
+    }
+    .frame1-image-style{
+        width: 240px;
+        background-color: rgba(246, 246, 246, 0.5);
+        
+        @include breakpoint("max-md"){
+            width: 141px;
+            height: 27px;
+        }
+        @include breakpoint("max-sm"){
+            display: none;
+        }
+    }
+    .newpic-style{
+        width: 325px;
+        height: 39px;
+        background-color: rgba(246, 246, 246, 0.5);
+       
+        @include breakpoint("max-md"){
+            width:225px;
+            height: 27px;
+        }
+        @include breakpoint("max-sm"){
+            display: none;
+        }
+        
+    }
+   
+    .vector-mobile{
+        display: none;
+        @include breakpoint("max-sm"){
+            display: flex;
+           
+                width: 6%;  // Adjust this value as desired
+                height: auto;  // This will maintain the image aspect ratio
+            
+        }
+    }
+   
 
     @keyframes moveInleft {
         0% {
@@ -43,7 +157,7 @@
     }
 
     @include breakpoint("max-sm") {
-        height: 216px;
+        height: 677px;
     }
 
 
@@ -65,6 +179,18 @@
 
 .debug-image {
     animation: none !important;
+    @include breakpoint("max-sm") {
+        display: none;
+        
+    }
+}
+.bedroom-mobile-image{
+    display: none;
+    @include breakpoint("max-sm") {
+        display: block;
+        height: 677px;
+    }
+
 }
 .next-button-align-slider {
     position: absolute;
@@ -75,6 +201,74 @@
 
     svg {
         transform: rotate(180deg);
+    }
+}
+.vector1-image-style {
+    width: 6%;  // Adjust this value as desired
+    height: auto;
+    @include breakpoint("max-sm") {
+        display: none;
+        
+    }  // This will maintain the image aspect ratio
+}
+.frame278-image-text-wrapper {
+    position: relative;
+    width: 100%;  // adjust this based on your requirements
+    height: 100%;  // adjust this based on your requirements
+}
+
+.frame278-image-style {
+    width: 184px;
+    height: 85px;
+    display: block;
+    @include breakpoint("max-sm"){
+        top: -67px;
+    position: relative;
+    }
+
+}
+
+.frame278-text {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: white;  // choose a color that contrasts with the image
+    text-align: center;
+    font-size: 10px;
+    @include breakpoint("max-sm"){
+        display: block;
+        position: relative;
+        top: -121px;
+     
+    }
+    ;  // adjust this based on your requirements
+}
+// .frame278-container {
+//     position: relative;
+//     width: 100%; // Adjust this based on your design
+//     height: auto;
+// }
+
+.frame278-text-content {
+    position: absolute;
+    top: 75%;
+    left: 1%;
+    // transform: translate(-50%, -50%);
+    color: white; // Set the text color to white for visibility (change if needed)
+    text-align: start;
+    font-size: 10px;
+    @include breakpoint("max-md"){
+        top: 67%;
+    }
+    @include breakpoint("max-sm"){
+        display: block;
+        position: absolute;
+        top: 32%;
+    }
+   span {
+        font-weight:900 ;      // Makes the text bold
+        color: rgba(255, 255, 255, 0.9);  // Makes the text appear whiter
     }
 }
 
@@ -90,7 +284,15 @@
 
 .hero-section-slider-section-alignment {
     overflow-x: hidden;
+    overflow-y: hidden;
     position: relative;
+    height: 677px;
+    @include breakpoint("max-md") {
+        height: 550px;
+     }
+    @include breakpoint("max-sm") {
+       height: 677px;
+    }
 }
 
 .hero-section-top-content-alignment-here {
@@ -103,16 +305,35 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 0 24px 0;
+        padding: 45px 0 24px 0;
 
         @include breakpoint("max-sm") {
             padding: 0 0 14px 0;
         }
+        .mobile{
+            display: none;
+            @include breakpoint("max-md") {
+               
+                display: flex;
+                justify-content: flex-end;
+                position: absolute;
+                top: 16%;
+               
+                right: 27%;
+            }
+            @include breakpoint("max-sm") {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
         img {
             max-width: 100px;
-
+            
+            @include breakpoint("max-md") {
+                display: none;
+            }
             @include breakpoint("max-sm") {
-                max-width: 60px;
+                display: none;
             }
         }
     }
@@ -134,12 +355,19 @@
                 text-align: center;
                 text-transform: uppercase;
                 font-family: 'Raleway', sans-serif;
-                background-color: rgb(71 ,79 ,93 , .7);
+                background-color: #7f7f7f;
                 color: #FFFFFF;
 
                 @include breakpoint("max-sm") {
                     font-size: 14px;
                     line-height: 20px;
+                    display: none;
+                }
+
+                @include breakpoint("max-md") {
+                    font-size: 14px;
+                    line-height: 20px;
+                    display: none;
                 }
             }
         }
@@ -157,7 +385,7 @@
     left: 0;
     position: absolute;
     width: 100%;
-    bottom: 88px;
+    bottom: 34px;
 
     @include breakpoint("max-sm") {
         bottom: 20px;
@@ -187,16 +415,22 @@
         .logo-center-alignment {
 
             img {
-                max-width: 189px;
-                height: 130px;
+                max-width: 113px;
+                height: 260px;
 
                 @include breakpoint("max-md") {
-                    max-width: 166px;
+                    width: 72px;
+                    height: 150px;
+                    
                 }
 
                 @include breakpoint("max-sm") {
-                    max-width: 45px;
-                    height: 52px;
+                   
+                        max-width: 72px;
+                        height: 57px;
+                        top: -13px;
+                        position: relative;
+                    
                 }
             }
         }
@@ -208,26 +442,42 @@
     top: 30px;
 
     @include breakpoint("max-sm") {
-        top: 0;
+        top: -17px;
     }
+
     .hero-light-box {
-        background: rgba(71, 79, 93, 0.6);
+        background:#7f7f7f;
         width: 142px;
         padding: 20px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
-
-        @include breakpoint("max-sm") {
-            padding: 10px;
-            width: fit-content;
-            justify-content: center;
+        margin-bottom: 40px;
+        @include breakpoint("max-md") {
+            width: 123px;
+            height: 58px;
+            margin-bottom: 27px;
         }
+        @include breakpoint("max-sm") {
+            width: 123px;
+            height: 58px;
+            margin-bottom: 43px;
+        }
+    .euro{
+        @include breakpoint("max-md") {
+            width:27px;
+            height: 30px;
+            
+        }
+
+    }
+        
 
         img {
             // animation: moveInleft 3s linear infinite;
             @include breakpoint("max-sm") {
-                max-width: 20px;
+                max-width: 39px;
+                
             }
         }
     }
