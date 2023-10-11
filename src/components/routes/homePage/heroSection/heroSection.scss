@@ -72,6 +72,7 @@
         font-weight: normal;  // Set font weight to bold
         font-size: 16px;    // Set font size to 16px
         margin-top: 20px;
+        color: #2D2C2C ;
         @include breakpoint("max-md"){
            font-size: 10px;        
            width: 103%;
@@ -84,7 +85,8 @@
     }
     
     .picture-style {
-        width: 250px;
+        width: auto;
+        height: 42px;
         background-color: rgba(246, 246, 246, 0.5);
       
         @include breakpoint("max-md"){
@@ -96,7 +98,8 @@
         } 
     }
     .frame1-image-style{
-        width: 240px;
+        width: auto;
+        height: 42px;
         background-color: rgba(246, 246, 246, 0.5);
         
         @include breakpoint("max-md"){
@@ -108,8 +111,8 @@
         }
     }
     .newpic-style{
-        width: 325px;
-        height: 39px;
+        width:auto;
+        height: 42px;
         background-color: rgba(246, 246, 246, 0.5);
        
         @include breakpoint("max-md"){
@@ -383,9 +386,10 @@
     align-items: center;
     justify-content: space-between;
     left: 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 34px;
+    z-index: 9999;
 
     @include breakpoint("max-sm") {
         bottom: 20px;

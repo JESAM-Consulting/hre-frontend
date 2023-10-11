@@ -45,7 +45,37 @@
       transform: rotate(180deg);
     }
   }
+  .slick-dots {
+    position: absolute;
+    bottom: -40px;  // Adjust this value to position the dots
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 
+    li {
+      margin: 0 5px;  // Adjust spacing between dots
+
+      &.slick-active .slick-dot {
+        background-color: #000;  // Active dot color
+      }
+
+      .slick-dot {
+        width: 20px;  // Adjust width of capsule
+        height: 10px;  // Adjust height of capsule
+        border-radius: 5px;  // Adjust border radius for capsule shape
+        background-color: #ddd;  // Inactive dot color
+        cursor: pointer;
+        
+      }
+      .slick-dot.hidden{
+        display: none;
+      }
+      .slick-dot.active {
+        transform: scale(1.5); /* Adjust this value to control the size of the active capsule */
+      }
+    }
+  }
   .review-all-text {
     padding: 0 0 50px 0;
     p {
