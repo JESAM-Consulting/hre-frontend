@@ -52,18 +52,87 @@
       color: #fff;
       line-height: normal;
     }
-    @media (min-width: 768px) and (max-width: 1024px) {
-      font-size: 24px; // Adjust the size as needed for tablets
-      max-width: 55%;
-      top: 8%;
-      right: 9%;
+    .info-text {
+      font-family: "Raleway", sans-serif; // Use Raleway font, fall back to sans-serif if not available
+      font-weight: normal; // Set font weight to bold
+      font-size: 16px; // Set font size to 16px
+      margin-top: 20px;
+      color: #2d2c2c;
+      @include breakpoint("max-md") {
+        font-size: 10px;
+        width: 103%;
+      }
+      @include breakpoint("max-sm") {
+        display: flex;
+        width: 123%;
+        font-size: 10px;
+      } // Optional: Add a little spacing on top to separate from the vector image
     }
-  }
-  .info-text {
-    font-family: "Raleway", sans-serif; // Use Raleway font, fall back to sans-serif if not available
-    font-weight: normal; // Set font weight to bold
-    font-size: 16px; // Set font size to 16px
-    margin-top: 20px;
+
+    .picture-style {
+      width: auto;
+      height: 42px;
+      background-color: rgba(246, 246, 246, 0.5);
+
+      @include breakpoint("max-md") {
+        width: 152px;
+        height: 27px;
+      }
+      @include breakpoint("max-sm") {
+        display: none;
+      }
+    }
+    .frame1-image-style {
+      width: auto;
+      height: 42px;
+      background-color: rgba(246, 246, 246, 0.5);
+
+      @include breakpoint("max-md") {
+        width: 141px;
+        height: 27px;
+      }
+      @include breakpoint("max-sm") {
+        display: none;
+      }
+    }
+    .newpic-style {
+      width: auto;
+      height: 42px;
+      background-color: rgba(246, 246, 246, 0.5);
+
+      @include breakpoint("max-md") {
+        width: 225px;
+        height: 27px;
+      }
+      @include breakpoint("max-sm") {
+        display: none;
+      }
+    }
+
+    .vector-mobile {
+      display: none;
+      @include breakpoint("max-sm") {
+        display: flex;
+
+        width: 6%; // Adjust this value as desired
+        height: auto; // This will maintain the image aspect ratio
+      }
+    }
+
+    @keyframes moveInleft {
+      0% {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+
+      80% {
+        transform: translateX(10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translate(0);
+      }
+    }
 
     @include breakpoint("max-md") {
       background-color: rgba(246, 246, 246, 0.5);
@@ -369,6 +438,14 @@
   position: absolute;
   width: 100%;
   bottom: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  bottom: 34px;
+  z-index: 9999;
 
   @include breakpoint("max-sm") {
     bottom: 20px;

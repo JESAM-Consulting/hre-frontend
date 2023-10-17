@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ReviewSection.scss";
 import Slider from "react-slick";
 import StarIcon from "../../../../assets/icons/star.svg";
@@ -23,8 +23,19 @@ function SamplePrevArrow(props: any) {
 }
 
 export default function ReviewSection() {
+  const [currentSlide, setCurrentSlide] = useState(0);
   const settings = {
-    dots: false,
+    dots: true,
+    beforeChange: (oldIndex:number, newIndex:number) => setCurrentSlide(newIndex),
+    customPaging: function(i:number) {
+      
+    const isActive = i === (currentSlide);
+    const className = `slick-dot${isActive ? ' active' : ''}`;
+    
+      return (
+          <div className={className}></div>
+      );
+  },
     infinite: true,
     speed: 500,
     slidesToShow: 4,
