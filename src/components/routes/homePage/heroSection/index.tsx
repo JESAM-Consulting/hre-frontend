@@ -38,7 +38,7 @@ export default function HeroSection() {
                 Assetklassen.<br></br>
                 Unsere Expertise geht von Wohnungen, Einfamilien,
                 <br className="phonebreak" /> Doppel- und Reihenhäusern, über
-                Villen,Wohn- und <br className="phonebreak" />
+                Villen, Wohn- und <br className="phonebreak" />
                 Geschäftshäusern bis hin zu Grundstücken und ganzen
                 Neubauprojekten.
               </div>

@@ -421,9 +421,9 @@ export default function Energieausweis() {
 
                 <div className="options-button-alignment">
                   <div className="pdf-button-alignment">
-                    <button>PDF mit den Angaben</button>
+                    {/* <button>PDF mit den Angaben</button> */}
                   </div>
-                  Verbrauchsausweis
+
                   <div className="other-button-alignment">
                     <button
                       onClick={() => {
@@ -456,7 +456,7 @@ export default function Energieausweis() {
 
                 <div className="options-button-alignment">
                   <div className="pdf-button-alignment">
-                    <button>PDF mit den Angaben</button>
+                    {/* <button>PDF mit den Angaben</button> */}
                   </div>
                   <div className="other-button-alignment">
                     <button

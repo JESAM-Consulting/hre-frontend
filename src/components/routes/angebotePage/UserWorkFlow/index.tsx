@@ -115,10 +115,7 @@ export default function UserWorkFlow() {
                       Sollten keine Grundrisse vorliegen, sorgen wir dafür, dass
                       Ihre Immobilie neu vermessen wird.
                     </p>
-                    <p className="margin-0">
-                      neu vermessen - <br />
-                      selbstverständlich kostenlos!
-                    </p>
+                    <p className="margin-0"></p>
                   </div>
                 </div>
               </div>
@@ -304,10 +301,8 @@ export default function UserWorkFlow() {
                       Grundrisse sind ein elementares
                       <br /> Dokument für Ihre Immobilie.
                       <br /> Sollten keine Grundrisse vorliegen,
-                      <br /> lassen wir Ihre Immobilie für Sie
                       <br />
-                      <span>neu vermessen</span> - <br /> selbstverständlich{" "}
-                      <span>kostenlos!</span>
+                      sorgen wir dafür, dass Ihre Immobilie neu vermessen wird.
                     </p>
                   </div>
                 </div>

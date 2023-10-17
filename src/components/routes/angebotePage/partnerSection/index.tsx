@@ -267,7 +267,7 @@ export default function PartnerSection() {
                   </p>
                 </div>
                 <div className="all-text-alignment-grid">
-                  <a href="tel: 0170 74 16 710">
+                  <a href="tel: +49 170 74 16 710">
                     <div className="text-alignment">
                       <div
                         className="animate__slideInUp animate__animated wow"
@@ -279,7 +279,7 @@ export default function PartnerSection() {
                         className="animate__slideInUp animate__animated wow"
                         data-wow-offset="100"
                       >
-                        <span>0170 74 16 710</span>
+                        <span>+49 170 74 16 710</span>
                       </div>
                     </div>
                   </a>
@@ -330,7 +330,7 @@ export default function PartnerSection() {
                   </p>
                 </div>
                 <div className="all-text-alignment-grid">
-                  <a href="tel:0170 66 87 847">
+                  <a href="tel:+49170 66 87 847">
                     <div className="text-alignment">
                       <div
                         className="animate__slideInUp animate__animated wow"
@@ -342,7 +342,7 @@ export default function PartnerSection() {
                         className="animate__slideInUp animate__animated wow"
                         data-wow-offset="100"
                       >
-                        <span>0170 66 87 847</span>
+                        <span>+49 170 66 87 847</span>
                       </div>
                     </div>
                   </a>

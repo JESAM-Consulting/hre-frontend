@@ -29,43 +29,64 @@
   .centered-text {
     display: flex;
     flex-direction: column;
+    grid-gap: 25%;
     gap: 25%;
     position: absolute;
     top: 2%;
     left: 42%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: 48px;
-    font-weight: normal;
+    font-weight: 400;
     z-index: 1000;
     color: #535252;
     font-family: "Raleway", sans-serif;
-    // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: start;
     max-width: 45%;
     height: 10%;
-    margin-top: 5%; // To ensure the text doesn't overflow the screen width
+    margin-top: 5%;
+    @include breakpoint("max-md") {
+      font-size: 24px;
+      max-width: 55%;
+      top: 8%;
+      right: 9%;
+    }
+    // To ensure the text doesn't overflow the screen width
     @include breakpoint("max-sm") {
       margin-top: 127px;
       position: absolute;
-      font-size: 28px;
+
       max-width: 80%;
       color: #fff;
-      line-height: normal;
+      font-size: 28px;
+      line-height: 32.5px;
     }
+
     .info-text {
       font-family: "Raleway", sans-serif; // Use Raleway font, fall back to sans-serif if not available
       font-weight: normal; // Set font weight to bold
       font-size: 16px; // Set font size to 16px
       margin-top: 20px;
       color: #2d2c2c;
+      background-color: hsla(0, 0%, 96.5%, 0.5);
+      border: 0.8px solid #535252;
+      width: 72%;
+      padding-left: 10px;
       @include breakpoint("max-md") {
+        background-color: hsla(0, 0%, 96.5%, 0.5);
+        border: 0.8px solid #535252;
         font-size: 10px;
-        width: 103%;
+        width: 93%;
+        padding-left: 4px;
       }
       @include breakpoint("max-sm") {
+        background-color: initial;
+        border: none;
         display: flex;
         width: 123%;
-        font-size: 10px;
+        font-size: 12px;
+        line-height: 15.5px;
+        color: #fff;
       } // Optional: Add a little spacing on top to separate from the vector image
     }
 
@@ -135,9 +156,6 @@
     }
 
     @include breakpoint("max-md") {
-      background-color: rgba(246, 246, 246, 0.5);
-      border: 0.8px solid #535252;
-      font-size: 10px;
       width: 93%;
       padding-left: 4px;
     }
@@ -146,8 +164,8 @@
       border: none;
       display: flex;
       width: 123%;
-      font-size: 12px;
-      line-height: 15.5px;
+      font-size: 28px;
+      line-height: 33.5px;
     } // Optional: Add a little spacing on top to separate from the vector image
   }
 

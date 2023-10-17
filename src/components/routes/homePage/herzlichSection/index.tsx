@@ -67,10 +67,7 @@ export default function HerzlichSection() {
                   alt="HerzlichImage"
                 />
                 <div className="hreimage">
-                  <img
-                    src={HRELogo}
-                    alt="HerzlichImage"
-                  />
+                  <img src={HRELogo} alt="HerzlichImage" />
                 </div>
               </div>
             </div>
