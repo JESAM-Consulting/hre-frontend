@@ -13,7 +13,7 @@ export default function PropertiesPage() {
     <div>
       <div className="properties-page-all-content-alignment">
         <div className="container">
-          <h1>Angebote 2022</h1>
+          <h1>Angebote 2023</h1>
         </div>
       </div>
       <PropertiesCard />

@@ -1,7 +1,7 @@
 import React from "react";
 import "./UserWorkFlow.scss";
 import Image01 from "../../../../assets/images/01.png";
-import Image06 from "../../../../assets/images/006.png";
+import Image06 from "../../../../assets/images/Rectangle 139.svg";
 import NewImgage from "../../../../assets/images/news.png";
 import Image008 from "../../../../assets/images/008.png";
 import Image009 from "../../../../assets/images/009.png";
@@ -9,7 +9,7 @@ import Image0010 from "../../../../assets/images/0010.png";
 import WhiteLong from "../../../../assets/images/white-long.svg";
 import Blackbottom from "../../../../assets/images/black-bottom.svg";
 import Mobile01 from "../../../../assets/images/mobile01.png";
-import Mobile02 from "../../../../assets/images/mobile02.png";
+import Mobile02 from "../../../../assets/images/Rectangle 139.svg";
 import Mobile03 from "../../../../assets/images/mobile03.png";
 import Mobile04 from "../../../../assets/images/mobile04.png";
 import Mobile05 from "../../../../assets/images/mobile05.png";
@@ -68,7 +68,9 @@ export default function UserWorkFlow() {
                     </div>
                     <h2>2. Professionelle Fotos</h2>
                     <p>
-                      Für Sie machen wir hochwertige Fotos, damit Ihre Immobilie im besten Licht präsentiert wird - selbstverständlich kostenlos!
+                      Für Sie machen wir hochwertige Fotos, damit Ihre Immobilie
+                      im besten Licht präsentiert wird - selbstverständlich
+                      kostenlos!
                     </p>
                   </div>
                 </div>
@@ -102,7 +104,7 @@ export default function UserWorkFlow() {
                 <div className="box box-left-arrow">
                   <div className="light-box box-height">
                     <div className="image-center-alignment">
-                      <img src={Image06} alt="Image06" />
+                      <img src={Mobile04} alt="Image06" />
                     </div>
                     <h2>4. Aufbereiten der Grundrisse</h2>
                     <p className="margin-0">
@@ -110,8 +112,8 @@ export default function UserWorkFlow() {
                       Immobilie.
                     </p>
                     <p className="margin-0">
-                      Sollten keine Grundrisse vorliegen, lassen wir Ihre
-                      Immobilie für Sie
+                      Sollten keine Grundrisse vorliegen, sorgen wir dafür, dass
+                      Ihre Immobilie neu vermessen wird.
                     </p>
                     <p className="margin-0">
                       neu vermessen - <br />
@@ -192,7 +194,7 @@ export default function UserWorkFlow() {
                 <div className="box box-left-arrow box-740">
                   <div className="light-box">
                     <div className="image-center-alignment">
-                      <img src={Image009} alt="Image009" />
+                      <img src={Mobile08} alt="Image009" className="Notar" />
                     </div>
                     <h2>8. Notar - Erfolg</h2>
                     <p className="margin-0">
@@ -368,9 +370,10 @@ export default function UserWorkFlow() {
                     <h4>7. Besichtigungen, Verhandlung und Bonitätsprüfung</h4>
                     <p style={{ maxWidth: "182px" }}>
                       Wir übernehmen für Sie selbstverständlich alle
-                      Besichtigungen, <span>auch am Wochenende</span>, damit Sie Zeit für
-                      andere Dinge haben. Zudem übernehmen wir die Verhandlungen
-                      in Ihrem Sinne und prüfen jeden Kunden auf Bonitat.
+                      Besichtigungen, <span>auch am Wochenende</span>, damit Sie
+                      Zeit für andere Dinge haben. Zudem übernehmen wir die
+                      Verhandlungen in Ihrem Sinne und prüfen jeden Kunden auf
+                      Bonitat.
                     </p>
                   </div>
                 </div>
@@ -391,8 +394,11 @@ export default function UserWorkFlow() {
                     </div>
                     <h4>8. Notar - Erfolg</h4>
                     <p style={{ maxWidth: "182px" }}>
-                    Wir lassen den Kaufvertrag vorbereiten und prüfen für Sie, dass alles niedergeschrieben wird, was Ihnen wichtig ist. Selbstverständlich begleiten wir Sie auch zum Notar, um den Verkauf erfolgreich und 
-                    <span>rechtssicher für Sie abzuschließen!</span>
+                      Wir lassen den Kaufvertrag vorbereiten und prüfen für Sie,
+                      dass alles niedergeschrieben wird, was Ihnen wichtig ist.
+                      Selbstverständlich begleiten wir Sie auch zum Notar, um
+                      den Verkauf erfolgreich und
+                      <span>rechtssicher für Sie abzuschließen!</span>
                     </p>
                   </div>
                 </div>

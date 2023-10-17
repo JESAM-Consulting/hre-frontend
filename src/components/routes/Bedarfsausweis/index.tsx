@@ -1,14 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./AngeboteDetails.scss";
+import "./bedarfsausweis.scss";
 import HreLgImage from "../../../assets/images/hre-lg.png";
-import QaIcons from "../../../assets/images/qa-icons.svg";
-import Icons1 from "../../../assets/images/h1.svg";
-import Icons2 from "../../../assets/images/h2.svg";
-import Icons3 from "../../../assets/images/h3.svg";
-import Icons4 from "../../../assets/images/h4.svg";
-import VerbrauchsausweisIcon from "../../../assets/images/Verbrauchsausweis.svg";
-import AngeboteDetailsModal from "./AngeboteDetailsModal";
-
 export default function AngeboteDetails() {
   const [texthidden, setTexthidden] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
@@ -39,11 +31,11 @@ export default function AngeboteDetails() {
       </div>{" "}
       <iframe
         className="iframe-energieausweis-online"
-        src="https://www.energieausweis-online-erstellen.de/energieausweis2/verbrauchsausweis-wohngebaeude/?iframe_token=232ff924c376c7"
+        src="https://www.energieausweis-online-erstellen.de/energieausweis2/bedarfsausweis-wohngebaeude/?iframe_token=232ff924c376c7"
         style={{ width: "100%", height: "966px", overflow: "hidden" }}
       ></iframe>
-      <div className="container-md-5">
-        <div className="angebote-details-all-content-alignment">
+      <div>
+        <div>
           <div>
             {/* <h1>Energieausweis</h1>
             <p>

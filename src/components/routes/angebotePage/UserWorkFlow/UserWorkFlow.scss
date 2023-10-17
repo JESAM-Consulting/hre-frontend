@@ -76,10 +76,9 @@
           height: 289px;
 
           p {
-            max-width: 182px; 
+            max-width: 182px;
           }
         }
-
 
         .mobile-light-box {
           background: #f4f4f4;
@@ -330,7 +329,7 @@
               img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                object-fit: contain;
               }
             }
             .image-center-alignment-one {
@@ -383,4 +382,7 @@
       }
     }
   }
+}
+.notar {
+  object-fit: contain !important;
 }

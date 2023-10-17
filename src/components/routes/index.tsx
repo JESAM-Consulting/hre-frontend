@@ -16,6 +16,8 @@ import ScrollUp from "../scrollUp";
 import Referenzen from "./Referenzen";
 import AngeboteDetails from "./AngeboteDetails";
 import Energieausweis from "./Energieausweis";
+import bedarfsausweis from "./Bedarfsausweis";
+// import iframe from "./Energieausweis";
 
 const DefaultLayoutLoader = ({ children, match }: any) => {
   const [loaderStart, setLoaderStart] = useState(false);
@@ -126,7 +128,7 @@ export default function Routes() {
             component={Referenzen}
             layout={DefaultLayout}
           />
-           <RouteWrapper
+          <RouteWrapper
             exact={true}
             path="/energieausweis"
             component={Energieausweis}
@@ -134,10 +136,22 @@ export default function Routes() {
           />
           <RouteWrapper
             exact={true}
-            path="/angebote-details"
+            path="/verbrauchsausweis"
             component={AngeboteDetails}
             layout={DefaultLayout}
           />
+          <RouteWrapper
+            exact={true}
+            path="/bedarfsausweis"
+            component={bedarfsausweis}
+            layout={DefaultLayout}
+          />
+          {/* <RouteWrapper
+            exact={true}
+            path="/iframe"
+            component={iframe}
+            layout={DefaultLayout}
+          /> */}
           <RouteWrapper
             exact={true}
             path="/properties-details/:id/:imagepreview"

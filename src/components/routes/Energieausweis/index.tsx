@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { useHistory } from "react-router-dom";
 import "./Energieausweis.scss";
+import AngeboteDetailsModal from "../AngeboteDetails/AngeboteDetailsModal";
 import HreLgImage from "../../../assets/images/hre-lg.png";
 import Ene1 from "../../../assets/icons/ene-1.svg";
 import Ene2 from "../../../assets/icons/ene-2.svg";
@@ -12,6 +14,36 @@ import BuildIcon from "../../../assets/icons/buld-icon.svg";
 import QATopArrow from "../../../assets/icons/qa-top-arrow.svg";
 import QADownArrow from "../../../assets/icons/qa-down-arrow.svg";
 export default function Energieausweis() {
+  // Adding modal handling functionality here
+  const [modalOpen, setModalOpen] = useState(false);
+  const modalRef = useRef<HTMLDivElement | null>(null);
+  const verbrauchsausweisButtonRef = useRef(null);
+  const bedarfsausweisButtonRef = useRef(null);
+  const history = useHistory();
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target as Node) &&
+        event.target !== verbrauchsausweisButtonRef.current &&
+        event.target !== bedarfsausweisButtonRef.current
+      ) {
+        setModalOpen(false);
+      }
+    }
+    console.log(
+      "[handleClickOutside] Clicked outside the modal. Trying to close it."
+    );
+    document.addEventListener("mouseup", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      console.log(
+        "[handleClickOutside] Clicked inside the modal or modal wasn't open or clicked the toggle button."
+      );
+    };
+  }, []);
+
   return (
     <div>
       <div>
@@ -39,8 +71,23 @@ export default function Energieausweis() {
                 </p>
               </div>
               <div className="energieausweis-button-alignment">
-                <button>Jetzt Verbrauchsausweis bestellen</button>
-                <button>Jetzt Bedarfsausweis bestellen</button>
+                <button
+                  ref={verbrauchsausweisButtonRef}
+                  onClick={() => {
+                    history.push("/verbrauchsausweis");
+                    // setModalOpen(!modalOpen);
+                  }}
+                >
+                  Jetzt Verbrauchsausweis bestellen
+                </button>
+                <button
+                  onClick={() => {
+                    // setModalOpen(!modalOpen);
+                    history.push("/bedarfsausweis"); // Navigate to the desired route
+                  }}
+                >
+                  Jetzt Bedarfsausweis bestellen
+                </button>
               </div>
             </div>
           </div>
@@ -259,7 +306,6 @@ export default function Energieausweis() {
             </div>
           </div>
         </div>
-
         <div className="warum-sollte-section">
           <div className="container-lg">
             <div className="warum-sollte-details-alignment">
@@ -321,41 +367,38 @@ export default function Energieausweis() {
                     </tbody>
                   </table>
                 </div>
-
-              
               </div>
             </div>
           </div>
           <div className="mobile-bedarfsausweis-chart-alignment">
-                  <table>
-                    <thead>
-                      <tr>
-                        <th></th>
-                        <th>Bis zu 4 Wohneinheiten</th>
-                        <th>Ab 5 Wohneinheiten</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Baujahr bis 1977</td>
-                        <td>Baujahr ab 1977</td>
-                        <td>Neubau</td>
-                      </tr>
-                      <tr>
-                        <td>Bedarfsausweis</td>
-                        <td>freie Wahl</td>
-                        <td>Bedarfsausweis</td>
-                      </tr>
-                      <tr>
-                        <td>freie Wahl</td>
-                        <td>freie Wahl</td>
-                        <td>Bedarfsausweis</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Bis zu 4 Wohneinheiten</th>
+                  <th>Ab 5 Wohneinheiten</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Baujahr bis 1977</td>
+                  <td>Baujahr ab 1977</td>
+                  <td>Neubau</td>
+                </tr>
+                <tr>
+                  <td>Bedarfsausweis</td>
+                  <td>freie Wahl</td>
+                  <td>Bedarfsausweis</td>
+                </tr>
+                <tr>
+                  <td>freie Wahl</td>
+                  <td>freie Wahl</td>
+                  <td>Bedarfsausweis</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-
         <div className="verbrauchsausweis-bedarfsausweis-section">
           <div className="container-lg">
             <div className="verbrauchsausweis-grid-alignment">
@@ -380,8 +423,16 @@ export default function Energieausweis() {
                   <div className="pdf-button-alignment">
                     <button>PDF mit den Angaben</button>
                   </div>
+                  Verbrauchsausweis
                   <div className="other-button-alignment">
-                    <button>Jetzt Verbrauchsausweis bestellen</button>
+                    <button
+                      onClick={() => {
+                        // setModalOpen(!modalOpen);
+                        history.push("/Verbrauchsausweis");
+                      }}
+                    >
+                      Jetzt Verbrauchsausweis bestellen
+                    </button>
                   </div>
                 </div>
               </div>
@@ -408,14 +459,21 @@ export default function Energieausweis() {
                     <button>PDF mit den Angaben</button>
                   </div>
                   <div className="other-button-alignment">
-                    <button>Jetzt Verbrauchsausweis bestellen</button>
+                    <button
+                      onClick={() => {
+                        history.push("/bedarfsausweis");
+
+                        // setModalOpen(!modalOpen);
+                      }}
+                    >
+                      Jetzt Bedarfsausweis bestellen
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         {/* <div className="qA-section">
           <div className="container-lg">
             <div className="qA-heading-text">
@@ -489,7 +547,13 @@ export default function Energieausweis() {
               </div>
             </div>
           </div>
-        </div> */}
+        </div> */}{" "}
+        {modalOpen && (
+          <AngeboteDetailsModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+          />
+        )}
       </div>
     </div>
   );

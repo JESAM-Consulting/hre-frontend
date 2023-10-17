@@ -181,7 +181,9 @@
 }
 
 .angebote-details-all-content-alignment {
-  padding: 0px 0 142px 0;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  overflow-y: hidden;
 
   @include breakpoint("max-sm") {
     padding: 60px 0;
@@ -285,8 +287,7 @@
   }
 
   .warum-details-all-content-alignment {
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding: 0 0 67px 0;
     h2 {
       font-weight: 400;
       font-size: 48px;

@@ -67,7 +67,7 @@ export default function PartnerSection() {
               </div>
             </div>
           </div>
-          <div className="grid-items">
+          {/* <div className="grid-items">
             <div className="card-image">
               <img src={ParnterImage03} alt="ParnterImage03" />
             </div>
@@ -123,8 +123,8 @@ export default function PartnerSection() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="grid-items">
+          </div> */}
+          {/* <div className="grid-items">
             <div className="card-image">
               <img src={ParnterImage04} alt="ParnterImage04" />
             </div>
@@ -179,7 +179,7 @@ export default function PartnerSection() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="grid-items">
             <div className="card-image">
               <img src={ParnterImage05} alt="ParnterImage05" />
@@ -216,7 +216,7 @@ export default function PartnerSection() {
                       </div>
                     </div>
                   </a>
-                  <a href="mailto:info@hre-immobilien.de?subject = Feedback&body = Message">
+                  <a href="mailto:dc@hre-immobilien.de?subject = Feedback&body = Message">
                     <div className="text-alignment">
                       <div
                         className="animate__slideInUp animate__animated wow"
@@ -228,7 +228,7 @@ export default function PartnerSection() {
                         className="animate__slideInUp animate__animated wow"
                         data-wow-offset="100"
                       >
-                        <span>info@hre-immobilien.de</span>
+                        <span>dc@hre-immobilien.de</span>
                       </div>
                     </div>
                   </a>
@@ -267,7 +267,7 @@ export default function PartnerSection() {
                   </p>
                 </div>
                 <div className="all-text-alignment-grid">
-                  <a href="tel: +49 174 8000848">
+                  <a href="tel: 0170 74 16 710">
                     <div className="text-alignment">
                       <div
                         className="animate__slideInUp animate__animated wow"
@@ -279,7 +279,7 @@ export default function PartnerSection() {
                         className="animate__slideInUp animate__animated wow"
                         data-wow-offset="100"
                       >
-                        <span> +49 174 8000848</span>
+                        <span>0170 74 16 710</span>
                       </div>
                     </div>
                   </a>
@@ -330,7 +330,7 @@ export default function PartnerSection() {
                   </p>
                 </div>
                 <div className="all-text-alignment-grid">
-                  <a href="tel:+49 1525 9204542">
+                  <a href="tel:0170 66 87 847">
                     <div className="text-alignment">
                       <div
                         className="animate__slideInUp animate__animated wow"
@@ -342,7 +342,7 @@ export default function PartnerSection() {
                         className="animate__slideInUp animate__animated wow"
                         data-wow-offset="100"
                       >
-                        <span>+49 1525 9204542</span>
+                        <span>0170 66 87 847</span>
                       </div>
                     </div>
                   </a>

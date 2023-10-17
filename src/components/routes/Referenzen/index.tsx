@@ -39,147 +39,127 @@ export default function Referenzen() {
             <div className="all-image-grid-alignment">
               <div className="image-grid">
                 <div className="image-grid-items">
-                  <NavLink to="/angebote-details">
-                    <div className="relative-div">
-                      <div className="image-style">
-                        <img src={Image1} alt="Image1" />
-                      </div>
-                      <div className="small-logo-alignment">
-                        <img src={HreLgImageSmall} alt="HreLgImageSmall" />
-                      </div>
+                  <div className="relative-div">
+                    <div className="image-style">
+                      <img src={Image1} alt="Image1" />
                     </div>
-                    <div className="line-row">
-                      <div className="active-line-row"></div>
+                    <div className="small-logo-alignment">
+                      <img src={HreLgImageSmall} alt="HreLgImageSmall" />
                     </div>
-                  </NavLink>
+                  </div>
+                  <div className="line-row">
+                    <div className="active-line-row"></div>
+                  </div>
                 </div>
                 <div className="image-grid-items">
-                  <NavLink to="/angebote-details">
-                    <div className="relative-div">
-                      <div className="image-style">
-                        <img src={Image2} alt="Image2" />
-                      </div>
-                      <div className="small-logo-alignment">
-                        <img src={HreLgImageSmall} alt="HreLgImageSmall" />
-                      </div>
+                  <div className="relative-div">
+                    <div className="image-style">
+                      <img src={Image2} alt="Image2" />
                     </div>
-                  </NavLink>
+                    <div className="small-logo-alignment">
+                      <img src={HreLgImageSmall} alt="HreLgImageSmall" />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="image-grid">
                 <div className="image-grid-items">
-                  <NavLink to="/angebote-details">
-                    <div className="relative-div">
-                      <div className="image-style">
-                        <img src={Image3} alt="Image3" />
-                      </div>
-                      <div className="small-logo-alignment">
-                        <img src={HreLgImageSmall} alt="HreLgImageSmall" />
-                      </div>
+                  <div className="relative-div">
+                    <div className="image-style">
+                      <img src={Image3} alt="Image3" />
                     </div>
-                    <div className="line-row">
-                      <div className="active-line-row"></div>
+                    <div className="small-logo-alignment">
+                      <img src={HreLgImageSmall} alt="HreLgImageSmall" />
                     </div>
-                  </NavLink>
+                  </div>
+                  <div className="line-row">
+                    <div className="active-line-row"></div>
+                  </div>
                 </div>
                 <div className="image-grid-items">
-                  <NavLink to="/angebote-details">
-                    <div className="relative-div">
-                      <div className="image-style">
-                        <img src={Image4} alt="Image4" />
-                      </div>
-                      <div className="small-logo-alignment">
-                        <img src={HreLgImageSmall} alt="HreLgImageSmall" />
-                      </div>
+                  <div className="relative-div">
+                    <div className="image-style">
+                      <img src={Image4} alt="Image4" />
                     </div>
-                  </NavLink>
+                    <div className="small-logo-alignment">
+                      <img src={HreLgImageSmall} alt="HreLgImageSmall" />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="image-grid">
                 <div className="image-grid-items">
-                  <NavLink to="/angebote-details">
-                    <div className="relative-div">
-                      <div className="image-style">
-                        <img src={Image5} alt="Image5" />
-                      </div>
-                      <div className="small-logo-alignment">
-                        <img src={HreLgImageSmall} alt="HreLgImageSmall" />
-                      </div>
+                  <div className="relative-div">
+                    <div className="image-style">
+                      <img src={Image5} alt="Image5" />
                     </div>
-                    <div className="line-row">
-                      <div className="active-line-row"></div>
+                    <div className="small-logo-alignment">
+                      <img src={HreLgImageSmall} alt="HreLgImageSmall" />
                     </div>
-                  </NavLink>
+                  </div>
+                  <div className="line-row">
+                    <div className="active-line-row"></div>
+                  </div>
                 </div>
                 <div className="image-grid-items">
-                  <NavLink to="/angebote-details">
-                    <div className="relative-div">
-                      <div className="image-style">
-                        <img src={Image6} alt="Image6" />
-                      </div>
-                      <div className="small-logo-alignment">
-                        <img src={HreLgImageSmall} alt="HreLgImageSmall" />
-                      </div>
+                  <div className="relative-div">
+                    <div className="image-style">
+                      <img src={Image6} alt="Image6" />
                     </div>
-                  </NavLink>
+                    <div className="small-logo-alignment">
+                      <img src={HreLgImageSmall} alt="HreLgImageSmall" />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="image-grid">
                 <div className="image-grid-items">
-                  <NavLink to="/angebote-details">
-                    <div className="relative-div">
-                      <div className="image-style">
-                        <img src={Image7} alt="Image7" />
-                      </div>
-                      <div className="small-logo-alignment">
-                        <img src={HreLgImageSmall} alt="HreLgImageSmall" />
-                      </div>
+                  <div className="relative-div">
+                    <div className="image-style">
+                      <img src={Image7} alt="Image7" />
                     </div>
-                    <div className="line-row">
-                      <div className="active-line-row"></div>
+                    <div className="small-logo-alignment">
+                      <img src={HreLgImageSmall} alt="HreLgImageSmall" />
                     </div>
-                  </NavLink>
+                  </div>
+                  <div className="line-row">
+                    <div className="active-line-row"></div>
+                  </div>
                 </div>
                 <div className="image-grid-items">
-                  <NavLink to="/angebote-details">
-                    <div className="relative-div">
-                      <div className="image-style">
-                        <img src={Image8} alt="Image8" />
-                      </div>
-                      <div className="small-logo-alignment">
-                        <img src={HreLgImageSmall} alt="HreLgImageSmall" />
-                      </div>
+                  <div className="relative-div">
+                    <div className="image-style">
+                      <img src={Image8} alt="Image8" />
                     </div>
-                  </NavLink>
+                    <div className="small-logo-alignment">
+                      <img src={HreLgImageSmall} alt="HreLgImageSmall" />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="image-grid">
                 <div className="image-grid-items">
-                  <NavLink to="/angebote-details">
-                    <div className="relative-div">
-                      <div className="image-style">
-                        <img src={Image9} alt="Image9" />
-                      </div>
-                      <div className="small-logo-alignment">
-                        <img src={HreLgImageSmall} alt="HreLgImageSmall" />
-                      </div>
+                  <div className="relative-div">
+                    <div className="image-style">
+                      <img src={Image9} alt="Image9" />
                     </div>
-                    <div className="line-row">
-                      <div className="active-line-row"></div>
+                    <div className="small-logo-alignment">
+                      <img src={HreLgImageSmall} alt="HreLgImageSmall" />
                     </div>
-                  </NavLink>
+                  </div>
+                  <div className="line-row">
+                    <div className="active-line-row"></div>
+                  </div>
                 </div>
                 <div className="image-grid-items">
-                  <NavLink to="/angebote-details">
-                    <div className="relative-div">
-                      <div className="image-style">
-                        <img src={Image10} alt="Image10" />
-                      </div>
-                      <div className="small-logo-alignment">
-                        <img src={HreLgImageSmall} alt="HreLgImageSmall" />
-                      </div>
+                  <div className="relative-div">
+                    <div className="image-style">
+                      <img src={Image10} alt="Image10" />
                     </div>
-                  </NavLink>
+                    <div className="small-logo-alignment">
+                      <img src={HreLgImageSmall} alt="HreLgImageSmall" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
