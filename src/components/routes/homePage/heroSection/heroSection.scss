@@ -520,12 +520,15 @@
 
   .hero-light-box {
     background: #7f7f7f;
-    width: 142px;
+    width: 160px;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin-bottom: 40px;
+    color: white; // Set the text color to white for visibility (change if needed)
+    text-align: start;
+  font-size: 12px;
     @include breakpoint("max-md") {
       width: 123px;
       height: 58px;

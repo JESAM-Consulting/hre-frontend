@@ -58,7 +58,7 @@ export default function Kontakt() {
                 Werden Sie Tippgeber und erhalten Sie für jeden hergestellten Kontakt
                 Geld, der zu einer erfolgreichen Vermittlung durch uns führt!<br/>
                 Beispiel: Verkaufspreis einer Immobilie für 500.000,-
-                € bedeutet für Sie 3.000,- €!<br/><br/></p>
+                € bedeutet für Sie 4.500,- €!<br/><br/></p>
                 <h6>Folgende Informationen benötigen wir:  </h6>
                 <ul>
                      <li>  Anschrift der zu verkaufenden / vermietenden Immobilie</li> 

@@ -7,7 +7,7 @@ import HeroBanner1 from "../../../../assets/images/BEDROOM1111.jpg";
 import Vector1Image from "../../../../assets/images/Vector 1.svg";
 import Vector1ImageMobile from "../../../../assets/images/Vectormob.svg";
 import Frame1Image from "../../../../assets/images/Frame2.svg";
-import Picture2Image from "../../../../assets/images/Frame 17.svg";
+import Picture2Image from "../../../../assets/images/Frame 17(1).svg";
 import Frame3Image from "../../../../assets/images/Frame 18.svg";
 import Frame278Image from "../../../../assets/images/Frame 278.svg";
 import Bedroommobile from "../../../../assets/images/BEDROOM1mobil.svg";
@@ -110,6 +110,7 @@ export default function HeroSection() {
             >
               <div className="bottom-banner-image-dummy-align-one">
                 <div className="hero-light-box">
+                <strong>Tippgeber</strong>
                   <img src={AssetsImage} alt="AssetsImage" className="euro" />
                 </div>
               </div>
